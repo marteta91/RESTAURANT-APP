@@ -42,4 +42,57 @@ body{
     justify-content: space-around;
     width:220%;
     height: auto;
+
+.dish-one{
+    display: flex;
+}
+
+.img-dish-one{
+    height: 111px;
+    border-radius: 20px;
+
+}
+
+.dish-description{
+    margin-left: 15px;
+}
+
+.dish-price{
+    margin: 0px;
+    color: #FF6B01;
+}
+
+.dish-title{
+    margin: 0px;
+}
+
+.dish-subtitle{
+    margin: 0px;
+    opacity: 40%;
+}
+
+.quantity{
+    display: flex;
+    margin-top: 8px;
+}
+
+.left{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    margin: 0px;
+    border: 1px;
+}
+
+.right{
+    width: 25px;
+    height: 25px;
+    background-color: white;
 }
