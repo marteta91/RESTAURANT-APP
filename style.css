@@ -74,8 +74,18 @@ justify-content: flex-start;
     height: auto;
 }
 
+/* Felicia no funcionaba el class porque faltaba cerrar 
+el .content5 con esto -> } jajaj acepta ese cambio */
+
+.one{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
 .dish-container-one{
     display: flex;
+    margin-bottom: 30px;
 }
 
 .img-dish-one{
@@ -111,6 +121,7 @@ justify-content: flex-start;
     width: 25px;
     height: 25px;
     background-color: white;
+    border: black 1px solid;
 }
 
 .number{
@@ -119,11 +130,13 @@ justify-content: flex-start;
     align-items: center;
     width: 25px;
     margin: 0px;
-    border: 1px;
+    border: black 1px solid;
+    background-color: rgb(223, 223, 223);
 }
 
 .right{
     width: 25px;
     height: 25px;
     background-color: white;
+    border: black 1px solid;
 }
