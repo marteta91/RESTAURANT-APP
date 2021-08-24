@@ -16,23 +16,23 @@
 
 
 .nav-one{
-
-
+display: flex;
+justify-content: flex-start;
 
 }
 
 .nav-two{
-
-
+display: flex;
+justify-content: flex-start;
 }
 
 .nav-three{
-
-
+display: flex;
+justify-content: flex-start;
 }
 .nav-four{
-
-    
+display: flex;
+justify-content: flex-start; 
 }
 
 .dish-one{
