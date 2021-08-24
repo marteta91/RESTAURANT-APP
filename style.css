@@ -34,26 +34,55 @@ body{
 
 }
 
+.nav{
+width: 60px;
+height: 60px;
+display: flex;
+}
 
 .nav-one{
-display: flex;
+
+justify-content: flex-start;
+width: 70px;
+height: 70px;
+margin-top: 20px;
+margin-left: 50px;
+}
+
+.Breakfast{
+width: 56px;
+height: 32px;
+
+}
+.nav-two{
+
 justify-content: flex-start;
 width: 15px;
 height: 15px;
 }
-
-.nav-two{
-display: flex;
-justify-content: flex-start;
+.fastfood{
+width: 56px;
+height: 32px
 }
-
 .nav-three{
-display: flex;
+
 justify-content: flex-start;
+width: 15px;
+height: 15px;
+}
+.Dinner{
+width: 56px;
+height: 32px
 }
 .nav-four{
-display: flex;
+
 justify-content: flex-start; 
+width: 15px;
+height: 15px;
+}
+.Desserts{
+width: 56px;
+height: 32px 
 }
 .content5{
     display:flex;
