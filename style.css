@@ -18,6 +18,22 @@ body{
     width: 100%;
 }
 
+
+@import{ url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+    
+
+}
+
+*{
+    font-family:  'Roboto', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
+    font-style: normal;
+  
+
+}
+
+
 .nav-one{
 
 
