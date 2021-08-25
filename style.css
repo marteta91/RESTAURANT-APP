@@ -184,11 +184,14 @@
 .orangesquare{
 background-color:#f55318;
 width: 104%;
-height: 250%;
 margin-left:-8px;
 border-radius: 15px;
 display:flex;
 justify-content:center;
+flex-direction: column;
+height: 260px;
+
+
 
 }
 
@@ -199,10 +202,22 @@ height: 40px;
 border-radius: 12px;
 justify-content: center;
 display: flex;
-justify-content: flex-start;
-margin-top: 285px;
+margin: 20px;
+padding: 10px;
+background-color: white;
+
+
 }
 .It{
-
-
+width: 306px;
+height: 36px;
+border-radius: 12px;
+justify-content: space-between;
+display: flex;
+margin-left: 26px;
+padding: 0px;
+margin-top: 2px;
+margin-bottom: 2px;
+color:white;
+font-size: 10px;
 }
