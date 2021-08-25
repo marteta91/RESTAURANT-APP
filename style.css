@@ -97,8 +97,7 @@
     margin-bottom: 30px;
 }
 
-/* Felicia no funcionaba el class porque faltaba cerrar 
-el .content5 con esto -> } jajaj acepta ese cambio */
+
 /*main*/
 .dishes{
     margin: 30px;
@@ -181,11 +180,11 @@ el .content5 con esto -> } jajaj acepta ese cambio */
 
 
 /*footer2*/
-.orangescuare{
-color:orangered;
-width: 250%;
+.orangesquare{
+background-color:#f55318;
+width: 104%;
 height: 250%;
-margin-left:50px;
+margin-left:-8px;
 border-radius: 15px;
 display:flex;
 justify-content:center;
@@ -201,4 +200,8 @@ justify-content: center;
 display: flex;
 justify-content: flex-start;
 margin-top: 285px;
+}
+.It{
+
+
 }
