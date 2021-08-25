@@ -5,6 +5,7 @@
   
 
 }
+/*reposiveertical*/
 @media screen (min-width: 768px){
 
 
@@ -13,7 +14,10 @@
     
 }
     
-
+/*responsi horizontal*/
+@media screen {
+    
+}
 
 
 
