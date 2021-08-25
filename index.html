@@ -9,7 +9,7 @@
     <link rel='stylesheet' type='text/css' href='style.css'>
 </head>
 <body>
-    <div class ="container1">
+    <div class ="container">
         <div class ="content1">
           <div class ="texts">
             <h2 class =" header2">Food House</h2>
@@ -51,7 +51,6 @@
       <main class="one">
 
         <div class="dish-container-one">
-            
             <img class="img-dish-one" src="images/chicke_veggie_salad.jpg" alt="">
 
             <div class="dish-description">
@@ -126,10 +125,9 @@
       </main>
 
      <div>
-            <a href="#" class = "content4">
-                 <img class= "Buttonorange" src = "icons/yellow.png">
-                </a>
-               
+            <div class = "content4">
+                <img src = "icons/yellow.png" class= "Buttonorange"></img>
+            </div>
             <div class ="content5">
             <img src = "icons/home-icon.png"></img>
                 <img src = "icons/message-icon.png"></img>
@@ -142,18 +140,18 @@
     </div>  
 
 
-<!--segunda pantalla-->
+
     
     <nav class="nav2">
         <div class="header-buttons">
             <button >
-                <img src="" alt="">
+                <img class ="back" src="icons/button-back.png" alt="">
             </button>
-            <button class="delete">
-                <img src="images/Delete_bag.png" alt="">
+            <button>
+                <img  class="delete" src="images/Delete_bag.png" alt="">
             </button>
         </div>
-        
+        <p class ="mycart">My Cart</p>        
     </nav>
 
     <h2>My cart</h2>
@@ -229,6 +227,27 @@
         
 
     </div>
+    <div class ="orange-container">
+        <div class ="list1">
+            <p>Subtotal</p>
+            <p>$96.00</p>
+        </div>
+        <div class ="list2">
+            <p>Tax & Fees</p>
+            <p>$2.00</p>
+        </div>
+        <div class ="list3">
+            <p>Delivery</p>
+            <p>Free</p>
+        </div>
+        <div class ="list4">
+            <p>TOTAL</p>
+            <p>$98.00</p>
+        </div>
+        <p>Enviar</p>
+    </div>
+
+   
 
 </body>
 </html>

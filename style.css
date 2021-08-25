@@ -215,3 +215,39 @@ el .content5 con esto -> } jajaj acepta ese cambio */
 .nav2{
 
 }
+.orange-container{
+    width:100%;
+    background-color: #FF6B01;
+}
+.orange-container p {
+    color:#fff;
+    font-weight: bold;
+}
+.header-buttons{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+.back{
+    width:30px;
+    height:30px;
+}
+.delete{
+    width:30px;
+    height:30px;
+}
+.nycart{}
+.list1{
+    display:flex;
+    justify-content: space-around;
+    width:20%
+}
+.list2{
+    display:flex
+}
+.list3{
+    display:flex
+}
+.list4{
+    display:flex
+}
