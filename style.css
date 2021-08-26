@@ -2,10 +2,16 @@
     font-family:  'Roboto', sans-serif;
     src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
     font-style: normal;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background-color: write
+    ;
+    
   
 
 }
-/*reposiveertical*/
+/*reposiveerticalmobil*/
 @media screen (min-width: 768px){
 
 
@@ -14,7 +20,7 @@
     
 }
     
-/*responsi horizontal*/
+/*responsi horizontalmobil*/
 @media screen {
     
 }
@@ -236,36 +242,43 @@ font-size: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: -0px;
+   
+}
+.center{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 110px;
+    margin-bottom: -1%;
 }
 .unic-dish{
-width: 100px;
-height: 100px;
-margin-left: 115px;
+width: 151px;
+height: 151px;
 border-radius: 20px;
-
+margin-left: -20px;
 }
 .dish-title3{
     display :flex;
-    margin-top: 30px;
-    margin-left: 50px;
-    width: 300px;
+     width: 300px;
+     margin-left: -55px;
 }
 .dish-subtitle3{
     display :flex;
-    margin-top: 10px;
-    margin-left: 80px;
+    margin-left: -25px;
     color:slategrey;
 }
 .dish-price3{
     display: flex;
-    margin-left: 125px;
-    margin-top: 10px;
+    margin-left: 11px;
+    
 }
 .quantity3{
-    margin-left: 120px;
-    margin-right: 50px;
+    
     width: 190px;
     display:flex;
+    margin-left: 115px;
     
 }
 .left{
@@ -285,13 +298,22 @@ border: rgb(148, 148, 148) 1px solid;
 
     margin-bottom: 50px;
     margin-top: 5px;
-    margin-left: 120px;
+    margin-left: -0px;
     font-size: 10px;
 }
+
 .close{
+<<<<<<< HEAD
+  margin-left: 278px;  
+  margin-bottom: 15px;
+  width: 70px;
+  height: 70px;
+  border-radius: 17px;
+=======
   margin-left: 290px;  
   margin-bottom: 90px;
   width: 80px;
   height: 70px;
   border-radius: 41px;
+>>>>>>> 01787ece46df6e20ebcbd044c7f36d999f531c72
 }
