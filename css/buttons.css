@@ -1,0 +1,25 @@
+/*spacemediquery*/
+
+
+
+
+
+
+
+
+
+.container2.active{
+    margin-left: -10px;
+ 
+}
+
+.container1.hide{
+  display:none;
+   
+}
+
+.Buttonorange{
+    width: 60px;
+    height: 60px;
+    display: flex;
+}
