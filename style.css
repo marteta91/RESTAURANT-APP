@@ -5,8 +5,8 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    background-color: write
-    ;
+    background-color: write;
+    
     
   
 
@@ -31,6 +31,8 @@
 .container1{
     width: 100%;
     height: 100%;
+    
+
 }
 
 .texts{
@@ -236,6 +238,13 @@ font-size: 10px;
 }
 
 /*container3*/
+.container2{
+    position:absolute;
+    margin-left: 390px;
+    transform: translateY(-103.5%);
+    transition: all 0.3s ease;
+        
+}
 
 .container3{
     margin-top: 90px;
@@ -243,6 +252,7 @@ font-size: 10px;
     display: flex;
     flex-direction: column;
     margin-top: -0px;
+    display:none
    
 }
 .center{
@@ -308,5 +318,14 @@ border: rgb(148, 148, 148) 1px solid;
     width: 70px;
     height: 70px;
     border-radius: 17px;
-  
+
+}
+.container2.active{
+    margin-left: -10px;
+ 
+}
+
+.container1.hide{
+  display:none;
+   
 }
