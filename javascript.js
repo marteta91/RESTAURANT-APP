@@ -1,3 +1,5 @@
+/*
+
 const navSlide = function(){
     const burger= document.querySelector ('.burger');
     const container2=document.querySelector('.container2');
@@ -19,3 +21,5 @@ const navSlide = function(){
     });
 }
 navSlide();
+
+/*
