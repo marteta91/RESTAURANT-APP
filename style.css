@@ -303,17 +303,10 @@ border: rgb(148, 148, 148) 1px solid;
 }
 
 .close{
-<<<<<<< HEAD
-  margin-left: 278px;  
-  margin-bottom: 15px;
-  width: 70px;
-  height: 70px;
-  border-radius: 17px;
-=======
-  margin-left: 290px;  
-  margin-bottom: 90px;
-  width: 80px;
-  height: 70px;
-  border-radius: 41px;
->>>>>>> 01787ece46df6e20ebcbd044c7f36d999f531c72
+    margin-left: 278px;  
+    margin-bottom: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 17px;
+  
 }
