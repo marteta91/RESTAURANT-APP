@@ -22,7 +22,7 @@
 }
     
 /*responsi horizontalmobil*/
-@media screen (max-width: 480px){
+@media screen (min-width: 480px){
     .container1{
         width: 480px;
         height: 320px;
@@ -30,17 +30,12 @@
 
     .It{
             width: 500px;
-            height: 36px;
-            border-radius: 12px;
-            justify-content: space-between;
-            display: flex;
             margin-left: 74px;
-            padding: 0px;
-            margin-top: 2px;
-            margin-bottom: 2px;
-            color:white;
-            font-size: 10px;
- 
+            background-color: red;
+    }
+
+    .Enviar-pedido{
+        margin-left: 180px;
     }
 }
 
