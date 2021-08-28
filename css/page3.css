@@ -1,0 +1,76 @@
+/*container3*/
+.container3{
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -0px;
+    display:none
+   
+}
+.center{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 110px;
+    margin-bottom: -1%;
+}
+.unic-dish{
+width: 151px;
+height: 151px;
+border-radius: 20px;
+margin-left: -20px;
+}
+.dish-title3{
+    display :flex;
+     width: 300px;
+     margin-left: -55px;
+}
+.dish-subtitle3{
+    display :flex;
+    margin-left: -25px;
+    color:slategrey;
+}
+.dish-price3{
+    display: flex;
+    margin-left: 11px;
+    
+}
+.quantity3{
+    
+    width: 190px;
+    display:flex;
+    margin-left: 115px;
+    
+}
+.left{
+width: 25px;
+height: 25px;
+background-color: white;
+border: rgb(148, 148, 148) 1px solid;
+    
+}
+.right{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: rgb(148, 148, 148) 1px solid;
+}
+.text{
+
+    margin-bottom: 50px;
+    margin-top: 5px;
+    margin-left: 0px;
+    font-size: 10px;
+    display:flex;
+}
+
+.close{
+    margin-left: 278px;  
+    margin-bottom: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 17px;
+
+}

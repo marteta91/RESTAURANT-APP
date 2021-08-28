@@ -1,4 +1,4 @@
-/*
+
 
 const navSlide = function(){
     const burger= document.querySelector ('.burger');
@@ -9,6 +9,8 @@ const navSlide = function(){
 
     burger.addEventListener('click', function(){
     container2.classList.add('active');
+    container1.classList.add('hide');
+    
   
 
 
@@ -21,5 +23,3 @@ const navSlide = function(){
     });
 }
 navSlide();
-
-/*
