@@ -1,0 +1,39 @@
+
+@import url(headers.css);
+@import url(mains.css);
+@import url(footers.css);
+@import url(buttons.css);
+
+
+
+
+
+
+
+*{
+    font-family:  'Roboto', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
+    font-style: normal;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+body{
+background-color: rgb(56, 56, 177);
+
+}
+
+
+
+
+
+
+
+
+
+
