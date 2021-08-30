@@ -46,7 +46,7 @@
         flex-direction: column;
     }
     .texts2{
-        margin:0px
+        margin:0px;
     }
     .burger{
         display: block;
@@ -54,6 +54,9 @@
 }
 
 /*window desktop sreen*/
-@media screen {
+@media screen and (max-width: 1080px){
+    .contaniner5{
+        display: none;
+    }
     
 }
