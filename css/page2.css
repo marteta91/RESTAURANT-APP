@@ -1,0 +1,14 @@
+
+/*container2*/
+.container2{
+    position:absolute;
+    margin-left: 430px;
+    transform: translateY(-90.5%);
+    transition: all 0.3s ease;
+    display:none;
+        
+}
+.container2.active{
+    margin-left: -10px;
+ 
+}
