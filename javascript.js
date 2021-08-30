@@ -9,7 +9,7 @@ const navSlide = function(){
 
     burger.addEventListener('click', function(){
     container2.classList.add('active');
-    container1.classList.add('hide');
+    //container1.classList.add('hide');//
     
   
 
