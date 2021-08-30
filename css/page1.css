@@ -85,7 +85,13 @@
    
 }
 
-.hide{
+.container1.play{
     display:none;
      
   }
+  
+  
+  .container1.hide{
+
+    display:none;
+}
