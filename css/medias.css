@@ -54,6 +54,13 @@
 }
 
 /*window desktop sreen*/
-@media screen {
-    
+@media screen {(min-width: 1080px)
+    .burger{
+        display:none;
+
+    }
+
+    .content5{
+        display:none;
+    }
 }
