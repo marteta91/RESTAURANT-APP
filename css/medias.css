@@ -17,7 +17,10 @@
         width: 320px;
         height: 480px;
     }
-    .burger{display:block}
+    .burger{
+        
+        display:block;
+    }
     .menu{
         width: 60px;
         height: 60px;
@@ -46,7 +49,7 @@
         flex-direction: column;
     }
     .texts2{
-        margin:0px
+        margin:0px;
     }
     .burger{
         display: block;
@@ -54,13 +57,16 @@
 }
 
 /*window desktop sreen*/
-@media screen {(min-width: 1080px)
+@media screen and (max-width: 1080px){
+    .contaniner5{
+        display: none;
+    }
+  
     .burger{
+    
         display:none;
-
+    
     }
 
-    .content5{
-        display:none;
-    }
 }
+
