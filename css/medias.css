@@ -17,7 +17,10 @@
         width: 320px;
         height: 480px;
     }
-    .burger{display:block}
+    .burger{
+        
+        display:block;
+    }
     .menu{
         width: 60px;
         height: 60px;
@@ -58,5 +61,12 @@
     .contaniner5{
         display: none;
     }
+  
+    .burger{
     
+        display:none;
+    
+    }
+
 }
+
