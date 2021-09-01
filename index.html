@@ -78,10 +78,9 @@
                     </div>
                     
                       <div class="quantity">
-                        <button class="less" onclick="integerminus()">-</button>
-                        <p class="number">0</p>
-                        <button class="add" onclick="integerplus()">+</button>
-
+                        <button class="left" id="minus">-</button>
+                        <span class="number" id="numberPlace">0</span>
+                        <button  class="right" id="plus">+</button>
                       </div>
 
                 </div>
@@ -102,9 +101,9 @@
                     </div>
                     
                     <div class="quantity">
-                        <button class="left">-</button>
-                        <p class="number">02</p>
-                        <button class="right">+</button>
+                        <button class="left" id="minus">-</button>
+                        <span class="number" id="numberPlace">0</span>
+                        <button  class="right" id="plus">+</button>
 
                     </div>
 
@@ -308,13 +307,13 @@
                         <img class ="back" src="icons/button-back.png" alt="" onclick="makeInvisible1()"> 
                     </button>
                     <button>
-                        <img  class="delete" src="images/Delete_bag.png" alt="">
+                        <img  id="delete" class="delete" src="images/Delete_bag.png" alt="">
                     </button>
                 </div>       
             </nav>
         
             
-            <div class="compra">
+            <div class="compra" id="delete">
 
                  <h2>My cart</h2>
 
