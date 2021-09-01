@@ -80,6 +80,8 @@ border-color: pink;
     display: flex;
     justify-content: space-between;
     height:70px;
+    width: 88%;
+    margin: 5%;
    
 
 }
