@@ -57,7 +57,7 @@
 }
 
 /*window desktop sreen*/
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1024px){
     .contaniner5{
         display: none;
     }
