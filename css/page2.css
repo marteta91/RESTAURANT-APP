@@ -11,26 +11,31 @@
     right: 0;
     background-color: rgb(0 0 0 / 80%);
     display:none;
+    width: 100%;
+    height:100%;
 }
 .containerbox{
 
-    width: 100%;
-    height:100%;
-    border-radius: 20px;
+    width: 24%;
+    height:60%;
+    border-radius: 15px;
+}
+
+.compra{
+    margin: 5%;
 }
 
 /*footer2*/
 .orangesquare{
     background-color:#f55318;
-    width: 104%;
-    margin-left:-8px;
+    width: 24%;
     border-radius: 15px;
     display:flex;
     justify-content:center;
     flex-direction: column;
     height: 260px;
     position: absolute;
-    
+    margin-top: 11%;
     
     
     }
@@ -46,12 +51,12 @@
     padding: 10px;
     background-color: white;
     font-weight: bold;
-    
+    margin-left: 25%;
     }
     
     
     .It{
-    width: 306px;
+    width: 93%;
     height: 36px;
     border-radius: 12px;
     justify-content: space-between;
@@ -62,7 +67,12 @@
     margin-bottom: 2px;
     color:white;
     font-size: 10px;
+    background-color:#f55318;
+    }
+
+    .It h1 {
+        background-color:#f55318;
     }
     .container2.toggle{
-        display: block;
+        display: flex;
     }

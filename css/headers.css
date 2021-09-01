@@ -5,7 +5,7 @@
     width: 90%;
     margin-left: 1%;
     font-family: 'ZCOOL KuaiLe', cursive;
-    src:url(https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap);
+   /* src:url(https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap);*/
 }
 
 .texts2{
@@ -80,6 +80,8 @@ border-color: pink;
     display: flex;
     justify-content: space-between;
     height:70px;
+    width: 88%;
+    margin: 5%;
    
 
 }
