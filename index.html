@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">aw3
     <title>Document</title>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
 </head>
@@ -15,8 +14,7 @@
            <div class ="texts">
                
             <h2 class ="header2">Food House</h2>
-            <img src = "icons/yellow.png" class= "Buttonorange"></img>
-            <img src ="icons/icon.png" class ="burger"></img>
+            <img src = "icons/yellow.png" class= "Buttonorange" onclick="makeVisible1()"></img>
           </div>
             <div class ="texts2">
                <h1>Food For Home</h1>
@@ -69,7 +67,7 @@
           <main class="dishes">
               <div class="column1">
                     <div class="dish-container-one">
-                  <img class="img-dish-one" src="images/dishes/chicke_veggie_salad.jpg" alt="">
+                  <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/chicke_veggie_salad.jpg" alt="">
 
                   <div class="dish-description">
                       <div class="dish-name">
@@ -80,9 +78,9 @@
                     </div>
                     
                       <div class="quantity">
-                        <button class="less">-</button>
-                        <p class="number">02</p>
-                        <button class="add">+</button>
+                        <button class="less" onclick="integerminus()">-</button>
+                        <p class="number">0</p>
+                        <button class="add" onclick="integerplus()">+</button>
 
                       </div>
 
@@ -303,142 +301,141 @@
 
 
     <div class="container2">  
-    <nav class="nav2">
-        <div class="header-buttons">
-            <button>
-                <img class ="back" src="icons/button-back.png" alt="">
-            </button>
-            <button>
-                <img  class="delete" src="images/Delete_bag.png" alt="">
-            </button>
-        </div>       
-    </nav>
-
-    <h2>My cart</h2>
-
-    <div class="dish-container-one">
-        <img class="img-dish-one" src="images/chicke_veggie_salad.jpg" alt="">
-
-        <div class="dish-description">
-            <div class="dish-name">
-                <h3 class="dish-price">$ 52.00</h3>
-                <h2 class="dish-title">Chicken Veggie Salad</h2>
-                <h3 class="dish-subtitle">With cheese sauce</h3>
-
+        <div class ="containerbox">
+            <nav class="nav2">
+                <div class="header-buttons">
+                    <button>
+                        <img class ="back" src="icons/button-back.png" alt="" onclick="makeInvisible1()"> 
+                    </button>
+                    <button>
+                        <img  class="delete" src="images/Delete_bag.png" alt="">
+                    </button>
+                </div>       
+            </nav>
+        
+            <h2>My cart</h2>
+        
+            <div class="dish-container-one">
+                <img class="img-dish-one" src="images/dishes/chicke_veggie_salad.jpg" alt="">
+        
+                <div class="dish-description">
+                    <div class="dish-name">
+                        <h3 class="dish-price">$ 52.00</h3>
+                        <h2 class="dish-title">Chicken Veggie Salad</h2>
+                        <h3 class="dish-subtitle">With cheese sauce</h3>
+        
+                    </div>
+                    
+                    <div class="quantity">
+                        <button class="left">-</button>
+                        <p class="number">02</p>
+                        <button class="right">+</button>
+        
+                    </div>
+        
+                </div>
+        
+                
+        
             </div>
+        
+            <div class="dish-container-one">
+                <img class="img-dish-one" src="images/dishes/fries.jpg" alt="">
+        
+                <div class="dish-description">
+                    <div class="dish-name">
+                        <h3 class="dish-price">$ 52.00</h3>
+                        <h2 class="dish-title">French Fry</h2>
+                        <h3 class="dish-subtitle">With beef bacon</h3>
+        
+                    </div>
+                    
+                    <div class="quantity">
+                        <button class="left">-</button>
+                        <p class="number">02</p>
+                        <button class="right">+</button>
+        
+                    </div>
+        
+                </div>
+        
+                
+        
+            </div>
+        
+            <div class="dish-container-one">
+                <img class="img-dish-one" src="images/dishes/chicke_veggie_salad.jpg" alt="">
+        
+                <div class="dish-description">
+                    <div class="dish-name">
+                        <h3 class="dish-price">$ 52.00</h3>
+                        <h2 class="dish-title">Chicken Veggie Salad</h2>
+                        <h3 class="dish-subtitle">With cheese sauce</h3>
+        
+                    </div>
+                    
+                    <div class="quantity">
+                        <button class="left">-</button>
+                        <p class="number">02</p>
+                        <button class="right">+</button>
+        
+                    </div>
+        
+                </div>
+            </div>
+            <section class="orangesquare">
+            <div class="It Subtotal">
+                <h1>Subtotal</h1>
+                <h1>$96.00</h1>
+            </div>
+            <div class="It Take&Fees">
+                 <h1>Take & Fees</h1>
+                <h1>$2.00</h1>
+            </div>
+            <div class="It Delivery">
+                <h1> Delivery</h1>
+                <h1> Free</h1>
+            </div>
+            <div class="It Total">
+                <h1>Total</h1>
+                 <h1>$98.00</h1>
+            </div>
+                <button class="Enviar-pedido">Enviar pedido</button>
             
-            <div class="quantity">
-                <button class="left">-</button>
-                <p class="number">02</p>
-                <button class="right">+</button>
-
-            </div>
-
+            </section>
         </div>
 
-        
-
     </div>
-
-    <div class="dish-container-one">
-        <img class="img-dish-one" src="images/chicke_veggie_salad.jpg" alt="">
-
-        <div class="dish-description">
-            <div class="dish-name">
-                <h3 class="dish-price">$ 52.00</h3>
-                <h2 class="dish-title">French Fry</h2>
-                <h3 class="dish-subtitle">With beef bacon</h3>
-
-            </div>
-            
-            <div class="quantity">
-                <button class="left">-</button>
-                <p class="number">02</p>
-                <button class="right">+</button>
-
-            </div>
-
-        </div>
-
-        
-
-    </div>
-
-    <div class="dish-container-one">
-        <img class="img-dish-one" src="images/chicke_veggie_salad.jpg" alt="">
-
-        <div class="dish-description">
-            <div class="dish-name">
-                <h3 class="dish-price">$ 52.00</h3>
-                <h2 class="dish-title">Chicken Veggie Salad</h2>
-                <h3 class="dish-subtitle">With cheese sauce</h3>
-
-            </div>
-            
-            <div class="quantity">
-                <button class="left">-</button>
-                <p class="number">02</p>
-                <button class="right">+</button>
-
-            </div>
-
-        </div>
-
-        
-
-    </div>
-    <section class="orangesquare">
-    
-            
-    <div class="It Subtotal">
-        <h1>Subtotal</h1>
-        <h1>$96.00</h1>
-    </div>
-    <div class="It Take&Fees">
-         <h1>Take & Fees</h1>
-        <h1>$2.00</h1>
-    </div>
-    <div class="It Delivery">
-        <h1> Delivery</h1>
-        <h1> Free</h1>
-    </div>
-    <div class="It Total">
-        <h1>Total</h1>
-         <h1>$98.00</h1>
-    </div>
-        <button class="Enviar-pedido">Enviar pedido</button>
-    
-    </section>
-
-</div>
 
 
        
 
     
- <div class="container3">
+    <div class="container3">
     
-      <a href="#"><img src="images/button X.png" alt="cruz" class="close"> </a>
-     <div class="center">
-        <img src="images/chicke_veggie_salad.jpg" alt="imagen comida" class="unic-dish">
+    
+        <div class="center">
+             <a href="#"><img src="images/button X.png" alt="cruz" class="close" onclick="makeInvisible2()"> </a>
+             <img src="images/dishes/chicke_veggie_salad.jpg" alt="imagen comida" class="unic-dish">
 
     
     
-            <h2 class="dish-title3 ">Chicken Veggie Salad</h2>
+                 <h2 class="dish-title3 ">Chicken Veggie Salad</h2>
             
 
-            <h3 class="dish-subtitle3">With cheese sauce</h3>
-            <div class="text">The delicious dish,<br> do you like cooking?</div>
+                 <h3 class="dish-subtitle3">With cheese sauce</h3>
+                 <div class="text">The delicious dish,<br> do you like cooking?</div>
         
-        <h3 class="dish-price3">$ 52.00</h3>
+             <h3 class="dish-price3">$ 52.00</h3>
+             <div class="quantity3">
+                   <button class="left">-</button>
+                   <p class="number">02</p>
+                   <button class="right">+</button>
+              </div>
       </div>
-        <div class="quantity3">
-            <button class="left">-</button>
-            <p class="number">02</p>
-            <button class="right">+</button>
-        
-        </div>
  </div>
+
+
      <script src="javascript.js"></script>
 </body>
 </html>
