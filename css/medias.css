@@ -1,72 +1,74 @@
 /*reposiveerticalmobil*/
-@media screen and (max-width: 375px){
+@media screen and (max-width: 320px){
 
     .container1{
-        width: 320px;
-        height: 480px;
-    }
-    .container2{
-        width: 320px;
-        height: 480px;
-        margin:20px;
-    }
-    .content5{
-        width:50px;
-    }
-    .container3{
-        width: 320px;
-        height: 480px;
-    }
-    .burger{
-        
-        display:block;
-    }
-    .menu{
-        width: 60px;
-        height: 60px;
-        display: flex;
-        margin-left: 30px;
-        margin-bottom: 30px;
-        
-    }
-    .content5{
-        display:flex;
-        justify-content: space-around;
         width: 100%;
         height: 100%;
-        margin-left: 30px;
-        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
     }
+    .container2{
+        width: 100%;
+        height: 480px;
+        margin:20px;
+        display: none;
+        
+    }
+ 
+    .container3{
+        width: 100%;
+        height: 480px;
+        display: none;
+    }
+
+
+    .menu{
+        width: 320px;
+        height: 35%;
+        padding: 2%;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        
+    }
+    
+    
+    ::-webkit-scrollbar {
+        height: 7px;
+        background: #fff;
+     
+     }
+     
+     ::-webkit-scrollbar-thumb {
+     
+        height: 7px;
+        background: black;
+     }
+    
+     .nav {
+        width: 75px;
+        cursor: pointer;
+        
+    }
+
     .Buttonorange{
         width: 60px;
         height: 60px;
         display: flex;
-        position: absolute;
-        transform: translate(170px,1520px);
+        transform: translate(-75px,1520px);
+        
     }
     .dishes{
+        width: 100%;
         display: flex;
         flex-direction: column;
-    }
-    .texts2{
-        margin:0px;
-    }
-    .burger{
-        display: block;
-    }
-}
-
-/*window desktop sreen*/
-@media screen and (max-width: 1024px){
-    .contaniner5{
-        display: none;
-    }
-  
-    .burger{
-    
-        display:none;
-    
+        margin-top: 30%;
+        margin-left: 10%;
     }
 
+    .content5{
+        display:flex;
+    }
 }
 
