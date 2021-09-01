@@ -1,16 +1,13 @@
 /*main*/
 .dishes{
-    margin: 30px;
-    display: flex;
-    margin-top: 70px;
     width: 100%;
+    display: flex;
     justify-content: space-around;
-    align-items: center ;
 }
 
 .dish-container-one{
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
 }
 
 .img-dish-one{
@@ -68,19 +65,19 @@
     background-color: white;
     border: rgb(148, 148, 148) 1px solid;
 }
-.column1{
-    display:table-column
+.column1 {
+    margin-right: 8%;
 }
 .column2{
-    display: table-column;
+    margin-right: 8%;
 }
 .column3{
-    display: table-column;
+    margin-right: 3%;
 }
 .content5{
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     
    
