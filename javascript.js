@@ -104,8 +104,8 @@ function integerminus(){
 
 
 window.onload=function(){
-    var minusBtn = document.getElementById("minus"),
-        plusBtn = document.getElementById("plus"),
+    var minusBtn = document.getElementById("minus")
+        plusBtn = document.getElementById("plus")
         numberPlace = document.getElementById("numberPlace"),
         number = 0, /// number value
         min = 0, /// min number
@@ -114,20 +114,20 @@ window.onload=function(){
     minusBtn.onclick = function(){
         if (number>min){
            number = number-1; /// Minus 1 of the number
-           numberPlace.innerText = number ; /// Display the value in place of the number
-           
+           numberPlace.innerHTML = number ; /// Display the value in place of the number
+           console.log(number,numberPlace)
         }
                 
     }
     plusBtn.onclick = function(){
         if(number<max){
            number = number+1;
-           numberPlace.innerText = number ; /// Display the value in place of the number
+           numberPlace.innerHTML = number ; /// Display the value in place of the number
         }     
      
            
     }
-    
+   
 }
 
 
@@ -141,3 +141,43 @@ boxes.forEach(box => {
 function Hidde() {
     this.style.opacity= 0;
 }
+ //intentolista platos para la seleccion hacia la tercera pantalla, igual me he flipado//
+ Chicken veggie salad-0
+ Tacos-1
+ Multon Curry-2
+ Bravas-3
+ Carrot Cake-4
+ Cheesecake-5
+ Brownie-6
+ Pancakes-7
+ Pizza-9
+ let dishes =3
+ switch(dishes){
+     case 0:
+         console.log("Chicken Veggie Salad")
+    break;
+    case 1:
+        console.log("Tacos")
+    break;
+    case 3:
+        console.log("Multton Curry")
+    break;
+    case 4:
+        console.log("Bravas")
+    break;
+    case 5:
+    console.log("Carrot Cake")
+    break;
+    case 6:
+        console.log("Cheesecake")
+    break;
+    case 7:
+        console.log("Brownie")
+    break;
+    case 8:
+        console.log("Pancakes")
+    break;
+    case 9:
+        console.log("Pizza")
+    break;
+ }
