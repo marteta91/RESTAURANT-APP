@@ -6,6 +6,19 @@ function makeInvisible1(){
     const container2 =document.querySelector('.container2')
     container2.classList.remove('toggle')
 }
+
+
+//___________________________________
+
+
+function eliminar(){
+    const compra = document.querySelector('.compra')
+    compra.classList.add('none')
+	
+}
+
+
+
 //ways to do this//
 
 //way 1//
@@ -132,9 +145,9 @@ window.onload=function(){
 
 
 //intento de eliminar platos con icono papelera (solo desaparece si le das al plato)
-let boxes = document.querySelectorAll('#delete div');
+let dishes = document.querySelectorAll('#delete div');
 
-boxes.forEach(box => {
+dishes.forEach(box => {
     box.addEventListener('click', Hidde)
 })
 
@@ -142,7 +155,9 @@ function Hidde() {
     this.style.opacity= 0;
 }
  //intentolista platos para la seleccion hacia la tercera pantalla, igual me he flipado//
- Chicken veggie salad-0
+ 
+ 
+ /*Chicken veggie salad-0
  Tacos-1
  Multon Curry-2
  Bravas-3
@@ -181,3 +196,5 @@ function Hidde() {
         console.log("Pizza")
     break;
  }
+
+ */

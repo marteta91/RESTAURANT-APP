@@ -76,3 +76,7 @@
     .container2.toggle{
         display: flex;
     }
+
+    .compra.none{
+        display: none;
+    }
