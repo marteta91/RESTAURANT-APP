@@ -142,42 +142,54 @@ function Hidde() {
     this.style.opacity= 0;
 }
  //intentolista platos para la seleccion hacia la tercera pantalla, igual me he flipado//
- Chicken veggie salad-0
- Tacos-1
- Multon Curry-2
- Bravas-3
- Carrot Cake-4
- Cheesecake-5
- Brownie-6
- Pancakes-7
- Pizza-9
+ let dish one =Chicken veggie salad 
+ let dish two=Tacos
+ let dish three=Multon Curry
+ let dish four=Bravas
+ let dish five=Carrot Cake
+ let dish six=Cheesecake
+ let dish seven=Brownie
+ let dish eight=Pancakes
+ let dish nine=Pizza
  let dishes =3
  switch(dishes){
      case 0:
          console.log("Chicken Veggie Salad")
+         function
+    
     break;
     case 1:
         console.log("Tacos")
+        document.write("Tacos");
     break;
     case 3:
         console.log("Multton Curry")
+        document.write("Multton Curry");
     break;
     case 4:
         console.log("Bravas")
+        document.write("Bravas");
     break;
     case 5:
     console.log("Carrot Cake")
+    document.write("Carrot Cake");
     break;
     case 6:
         console.log("Cheesecake")
+        document.write("Cheesecake");
     break;
     case 7:
         console.log("Brownie")
+        document.write("Brownie");
     break;
     case 8:
         console.log("Pancakes")
+        document.write("Pancakes");
     break;
     case 9:
         console.log("Pizza")
+        document.write("Pizza");
     break;
  }
+
+ /*funcion con jv para que se vean los palto en la primera pagina*/
