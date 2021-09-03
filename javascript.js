@@ -1,3 +1,81 @@
+let price = 0
+let getOwnPropertyNames
+let img = .jpg
+
+
+Array[
+    Object.chicken{
+        price: 12
+        name: "Chicken Veggie Salad"
+        description: "With cheese sauce"
+        img: 
+    };
+
+    Object.tacos{
+        price: 8 
+        name:"Tacos"
+        description: "With Guacamole"
+        img:       
+    };
+
+    Object.curry{
+        price: 12
+        name: "Mutton Curry"
+        description: "With with basmati rice<"
+        img:       
+    };
+
+    Object.bravas{
+        price: 5 
+        name: "Bravas"
+        description: "With salsa picante"
+        img:  
+    };
+
+    Object.carrotcake{
+        price: 3
+        name: "Carrot Cake"
+        description: "One portion"
+        img:       
+    };
+
+    Object.cheesecake{
+        price: 3
+        name: "Cheesecake"
+        description: "One portion"
+        img:       
+    };
+
+    Object.brownie{
+        price: 3
+        name: "Brownie"
+        description: "One portion"
+        img:       
+    };
+
+    Object.pancakes{
+        price: 8 
+        name: "Pancakes"
+        description: "6 unites"
+        img:       
+    };
+
+    Object.pizza{
+        price: 8
+        name: "Pizza"
+        description: "Three portions"
+        img:       
+    };
+]
+
+//Object.getOwnPropertyNames()
+
+// Imprime nombres de variables y valores usando Array.forEach
+//Object.getOwnPropertyNames(obj).forEach(function(val, idx, array) {
+  //  print(val + " -> " + obj[val]);
+  
+
+
 function makeVisible1(){
     const container2 =document.querySelector('.container2')
     container2.classList.add('toggle')
@@ -8,18 +86,8 @@ function makeInvisible1(){
 }
 
 
-//___________________________________
-
-
-function eliminar(){
-    const compra = document.querySelector('.compra')
-    compra.classList.add('none')
-	
-}
-
-
-
 //ways to do this//
+
 
 //way 1//
 
@@ -143,6 +211,15 @@ window.onload=function(){
    
 }
 
+
+//para que desaparezca toda la compra
+
+
+function eliminar(){
+    const compra = document.querySelector('.compra')
+    compra.classList.add('none')
+	
+}
 
 //intento de eliminar platos con icono papelera (solo desaparece si le das al plato)
 let dishes = document.querySelectorAll('#delete div');
