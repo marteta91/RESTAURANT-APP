@@ -1,66 +1,66 @@
-Array[
-    Object.chicken{
+Array = [
+    {
         price: 12
         name: "Chicken Veggie Salad"
         description: "With cheese sauce"
-        img: 
-    };
+        img: "images/dishes/chicke_veggie_salad.jpg"
+    },
 
-    Object.tacos{
+    {
         price: 8 
         name:"Tacos"
         description: "With Guacamole"
-        img:       
-    };
+        img: "images/dishes/tacos.jpg"
+    },
 
-    Object.curry{
+    {
         price: 12
         name: "Mutton Curry"
         description: "With with basmati rice<"
-        img:       
-    };
+        img: "images/dishes/curry.jpg"     
+    },
 
-    Object.bravas{
+    {
         price: 5 
         name: "Bravas"
         description: "With salsa picante"
-        img:  
-    };
+        img: "images/dishes/patatas-bravas.jpg"
+    },
 
-    Object.carrotcake{
+    {
         price: 3
         name: "Carrot Cake"
         description: "One portion"
-        img:       
-    };
+        img: "images/dishes/carrot-cake.jpg"
+    },
 
-    Object.cheesecake{
+    {
         price: 3
         name: "Cheesecake"
         description: "One portion"
-        img:       
-    };
+        img: "images/dishes/cheesecake.jpg"
+    },
 
-    Object.brownie{
+    {
         price: 3
         name: "Brownie"
         description: "One portion"
-        img:       
-    };
+        img: "images/dishes/brownie.jpg"      
+    },
 
-    Object.pancakes{
+    {
         price: 8 
         name: "Pancakes"
         description: "6 unites"
-        img:       
-    };
+        img: "images/dishes/pancakes.jpg"      
+    },
 
-    Object.pizza{
+    {
         price: 8
         name: "Pizza"
         description: "Three portions"
-        img:       
-    };
+        img: "images/dishes/pizza.jpg"      
+    }
 ]
 
 //Object.getOwnPropertyNames()
