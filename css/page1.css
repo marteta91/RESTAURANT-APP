@@ -42,7 +42,7 @@
     margin-top: 8px;
 }
 
-.less{
+.minus{
     width: 25px;
     height: 25px;
     background-color: white;
@@ -59,7 +59,7 @@
     background-color: rgb(223, 223, 223);
 }
 
-.add{
+.plus{
     width: 25px;
     height: 25px;
     background-color: white;

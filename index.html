@@ -83,29 +83,29 @@
                         <button class="right" id="plus">+ </button>
                       </div>
 
-                </div>
+                    </div>
 
                 
 
                     </div>
 
                     <div class="dish-container-one">
-                  <img class="img-dish-one" src="images/dishes/tacos.jpg" alt="">
+                  <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/tacos.jpg" alt="">
 
                   <div class="dish-description">
                       <div class="dish-name">
-                        <h3 class="dish-price">$ 8.00</h3>
+                        <h3 class="dish-price" >$ 8.00</h3>
                         <h2 class="dish-title">Tacos</h2>
                         <h3 class="dish-subtitle">With Guacamole</h3>
 
                     </div>
                     
-                    <div class="quantity">
+                      <div class="quantity" >
                         <button class="left" id="minus">-</button>
                         <span class="number" id="numberPlace">0</span>
                         <button  class="right" id="plus">+</button>
 
-                    </div>
+                      </div>
 
                 </div>
 
@@ -114,7 +114,7 @@
                     </div>
 
                    <div class="dish-container-one">
-                <img class="img-dish-one" src="images/dishes/curry.jpg" alt="">
+                <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/curry.jpg" alt="">
 
                 <div class="dish-description">
                     <div class="dish-name">
@@ -126,8 +126,8 @@
                     
                     <div class="quantity">
                         <button class="left" id="minus">-</button>
-                        <span class="number" id="numberPlace">0</span>
-                        <button  class="right" id="plus">+</button>
+                        <p class="number" id="numberPlace">02</p>
+                        <button class="right"id="plus">+</button>
 
                     </div>
 
@@ -140,7 +140,7 @@
 
               <div class ="column2">
                    <div class="dish-container-one">
-                <img class="img-dish-one" src="images/dishes/patatas-bravas.jpg" alt="">
+                <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/patatas-bravas.jpg" alt="">
 
                 <div class="dish-description">
                     <div class="dish-name">
@@ -150,10 +150,10 @@
 
                   </div>
                   
-                    <div class="quantity">
-                        <button class="left" id="minus">-</button>
-                        <span class="number" id="numberPlace">0</span>
-                        <button  class="right" id="plus">+</button>
+                    <div class="quantity"> 
+                      <button class="less"id="minus">-</button>
+                      <p class="number" id="numberPlace">02</p>
+                      <button class="add" id="plus">+</button>
 
                     </div>
 
@@ -164,7 +164,7 @@
                    </div>
 
                    <div class="dish-container-one">
-                <img class="img-dish-one" src="images/dishes/carrot-cake.jpg" alt="">
+                <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/carrot-cake.jpg" alt="">
 
                 <div class="dish-description">
                     <div class="dish-name">
@@ -188,7 +188,7 @@
                    </div>
 
                    <div class="dish-container-one">
-              <img class="img-dish-one" src="images/dishes/cheesecake.jpg" alt="">
+              <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/cheesecake.jpg" alt="">
 
               <div class="dish-description">
                   <div class="dish-name">
@@ -214,7 +214,7 @@
               </div>
               <div class ="column3">
                    <div class="dish-container-one">
-            <img class="img-dish-one" src="images/dishes/brownie.jpg" alt="">
+            <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/brownie.jpg" alt="">
 
             <div class="dish-description">
                 <div class="dish-name">
@@ -239,7 +239,7 @@
                    </div>
 
                    <div class="dish-container-one">
-            <img class="img-dish-one" src="images/dishes/pancakes.jpg" alt="">
+            <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/pancakes.jpg" alt="">
 
             <div class="dish-description">
                 <div class="dish-name">
@@ -310,108 +310,110 @@
                     <button>
                         <img class ="back" src="icons/button-back.png" alt="" onclick="makeInvisible1()"> 
                     </button>
-                    <button>
-                        <img  id="delete" class="delete" src="images/Delete_bag.png" alt="">
+                    <button >
+                        <img onclick="eliminar()" class="delete" src="images/Delete_bag.png" alt="">
                     </button>
                 </div>       
             </nav>
         
-            
-            <div class="compra" id="delete">
+            <div class="compra">
+                <div>
 
-                 <h2>My cart</h2>
+                    <h2>My cart</h2>
 
 
-                <div class="dish-container-one">
-                    <img class="img-dish-one" src="images/dishes/chicke_veggie_salad.jpg" alt="">
-            
-                    <div class="dish-description">
-                        <div class="dish-name">
-                            <h3 class="dish-price">$ 52.00</h3>
-                            <h2 class="dish-title">Chicken Veggie Salad</h2>
-                            <h3 class="dish-subtitle">With cheese sauce</h3>
-            
+                    <div class="dish-container-one">
+                        <img class="img-dish-one" src="images/dishes/chicke_veggie_salad.jpg" alt="">
+                
+                        <div class="dish-description">
+                            <div class="dish-name">
+                                <h3 class="dish-price">$ 52.00</h3>
+                                <h2 class="dish-title">Chicken Veggie Salad</h2>
+                                <h3 class="dish-subtitle">With cheese sauce</h3>
+                
+                            </div>
+                            
+                            <div class="quantity">
+                                <button class="left">-</button>
+                                <p class="number">02</p>
+                                <button class="right">+</button>
+                
+                            </div>
+                
                         </div>
+                
                         
-                        <div class="quantity">
-                            <button class="left" id="minus">-</button>
-                            <span class="number" id="numberPlace">0</span>
-                            <button  class="right" id="plus">+</button>
-            
-                        </div>
-            
+                
                     </div>
-            
-                    
-            
-                </div>
-            
-                <div class="dish-container-one">
-                    <img class="img-dish-one" src="images/dishes/fries.jpg" alt="">
-            
-                    <div class="dish-description">
-                        <div class="dish-name">
-                            <h3 class="dish-price">$ 52.00</h3>
-                            <h2 class="dish-title">French Fry</h2>
-                            <h3 class="dish-subtitle">With beef bacon</h3>
-            
+                
+                    <div class="dish-container-one">
+                        <img class="img-dish-one" src="images/dishes/fries.jpg" alt="">
+                
+                        <div class="dish-description">
+                            <div class="dish-name">
+                                <h3 class="dish-price">$ 52.00</h3>
+                                <h2 class="dish-title">French Fry</h2>
+                                <h3 class="dish-subtitle">With beef bacon</h3>
+                
+                            </div>
+                            
+                            <div class="quantity">
+                                <button class="left">-</button>
+                                <p class="number">02</p>
+                                <button class="right">+</button>
+                
+                            </div>
+                
                         </div>
+                
                         
-                        <div class="quantity">
-                            <button class="left" id="minus">-</button>
-                            <span class="number" id="numberPlace">0</span>
-                            <button  class="right" id="plus">+</button>
-            
-                        </div>
-            
+                
                     </div>
-            
-                    
-            
-                </div>
-            
-                <div class="dish-container-one">
-                    <img class="img-dish-one" src="images/dishes/chicke_veggie_salad.jpg" alt="">
-            
-                    <div class="dish-description">
-                        <div class="dish-name">
-                            <h3 class="dish-price">$ 52.00</h3>
-                            <h2 class="dish-title">Chicken Veggie Salad</h2>
-                            <h3 class="dish-subtitle">With cheese sauce</h3>
-            
+                
+                    <div class="dish-container-one">
+                        <img class="img-dish-one" src="images/dishes/chicke_veggie_salad.jpg" alt="">
+                
+                        <div class="dish-description">
+                            <div class="dish-name">
+                                <h3 class="dish-price">$ 52.00</h3>
+                                <h2 class="dish-title">Chicken Veggie Salad</h2>
+                                <h3 class="dish-subtitle">With cheese sauce</h3>
+                
+                            </div>
+                            
+                            <div class="quantity">
+                                <button class="left">-</button>
+                                <p class="number">02</p>
+                                <button class="right">+</button>
+                
+                            </div>
+                
                         </div>
-                        
-                        <div class="quantity">
-                            <button class="left" id="minus">-</button>
-                            <span class="number" id="numberPlace">0</span>
-                            <button  class="right" id="plus">+</button>
-                        </div>
-            
                     </div>
                 </div>
+
+                <section class="orangesquare">
+                <div class="It Subtotal">
+                    <h1>Subtotal</h1>
+                    <h1>$96.00</h1>
+                </div>
+                <div class="It Take&Fees">
+                    <h1>Take & Fees</h1>
+                    <h1>$2.00</h1>
+                </div>
+                <div class="It Delivery">
+                    <h1> Delivery</h1>
+                    <h1> Free</h1>
+                </div>
+                <div class="It Total">
+                    <h1>Total</h1>
+                    <h1>$98.00</h1>
+                </div>
+                    <button class="Enviar-pedido">Enviar pedido</button>
+                
+                </section>
             </div>
 
-
-            <section class="orangesquare">
-            <div class="It Subtotal">
-                <h1>Subtotal</h1>
-                <h1>$96.00</h1>
-            </div>
-            <div class="It Take&Fees">
-                 <h1>Take & Fees</h1>
-                <h1>$2.00</h1>
-            </div>
-            <div class="It Delivery">
-                <h1> Delivery</h1>
-                <h1> Free</h1>
-            </div>
-            <div class="It Total">
-                <h1>Total</h1>
-                 <h1>$98.00</h1>
-            </div>
-                <button class="Enviar-pedido">Enviar pedido</button>
-            
-            </section>
         </div>
 
     </div>
