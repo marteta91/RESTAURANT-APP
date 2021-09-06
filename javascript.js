@@ -1,4 +1,4 @@
-Array = [
+/*const dishes = [
     {
         price: 12,
         name: "Chicken Veggie Salad",
@@ -61,7 +61,7 @@ Array = [
         description: "Three portions",
         img: "images/dishes/pizza.jpg"      
     }
-]
+]*/
 
 //Object.getOwnPropertyNames()
 
