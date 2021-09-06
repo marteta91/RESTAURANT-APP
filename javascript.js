@@ -1,4 +1,11 @@
 /*const dishes = [
+let price = 0
+let getOwnPropertyNames = ""
+let description = ""
+let img = jpg
+
+
+Array = [
     {
         price: 12,
         name: "Chicken Veggie Salad",
