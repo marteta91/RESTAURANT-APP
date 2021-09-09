@@ -16,8 +16,8 @@
 }
 .containerbox{
 
-    width: 24%;
-    height:60%;
+    width: 50%;
+    height: 100%;
     border-radius: 15px;
 }
 
@@ -25,18 +25,31 @@
     margin: 5%;
 }
 
+.buy{
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 381px;
+    margin-bottom: -22%;
+}
+
+::-webkit-scrollbar {
+    height: 7px;
+    background: #fff;
+ 
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+ 
+    height: 5px;
+    background: black;
+ }
+
 /*footer2*/
 .orangesquare{
     background-color:#f55318;
-    width: 24%;
     border-radius: 15px;
-    display:flex;
-    justify-content:center;
-    flex-direction: column;
-    height: 260px;
-    position: absolute;
-    margin-top: 11%;
-    
+    margin-top: 28%;
+    height: 30%;
     
     }
     
@@ -47,21 +60,21 @@
     border-radius: 12px;
     justify-content: center;
     display: flex;
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
     background-color: white;
     font-weight: bold;
-    margin-left: 25%;
+    margin-left: 18%;
     }
     
     
     .num{
-    width: 93%;
+    max-width: 82%;
     height: 36px;
     border-radius: 12px;
     justify-content: space-between;
     display: flex;
-    margin-left: 26px;
+    margin-left: 36px;
     padding: 0px;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -80,3 +93,5 @@
     .compra.none{
         display: none;
     }
+
+    

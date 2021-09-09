@@ -55,10 +55,10 @@
      
      }
      
-     ::-webkit-scrollbar-thumb {
+    .byy::-webkit-scrollbar-thumb {
      
         height: 7px;
-        background: black;
+        background: orange;
      }
     
      .nav {
