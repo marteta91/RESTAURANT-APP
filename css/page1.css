@@ -5,7 +5,7 @@
     justify-content: space-around;
 }
 
-.dish-container-one{
+.dish {
     display: flex;
     margin-bottom: 3%;
 }

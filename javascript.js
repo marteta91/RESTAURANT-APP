@@ -1,4 +1,4 @@
-const dishes = [
+
 let price = 0
 let getOwnPropertyNames = ""
 let description = ""
