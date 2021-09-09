@@ -19,60 +19,7 @@ function eliminar(){
 
 
 
-//ways to do this//
 
-//way 1//
-
-/*const navSlide = function(){
-    const burger= document.querySelector ('.burger');
-    const container2=document.querySelector('.container2');
-    const back =document.querySelector('.back');
-    const container1 =document.querySelector('.container1');
-
-
-    burger.addEventListener('click', function(){
-    container2.classList.add('active');
-    container1.classList.add('hide');
-    
-  
-
-
-    });
-
-    back.addEventListener('click', function(){
-    isNotVisible(container2)
-    container1.classList.remove('hide');
-    
-
-    });
-}
-navSlide(); */
-
-//way2//
-
-//another way, making "isNotVisible" a funtion. instead of writing "container3.classList.remove('toggle')"
-//we make "isNotVisible" a function, added instructions(elementToEdit.classList.remove('toggle');) to it 
-//and only have to write isNotVisible(container3) instead of container3.classList.remove('toggle'); don't 
-//forget to write onclick=makeVisible() in html
-
-//like this// =>
-
-/*function makeV(elementToEdit){
-    elementToEdit.classList.add('toggle');
-}
-function makeInv(anything){
-    anything.classList.remove('toggle')
-}
-
-
-function makeVisible(){
-    const container3 = document.querySelector('.container3');
-    makeV(container3)
-}
-function makeInvisible(){
-    const container3 = document.querySelector('.container3');
-    makeInv(container3)
-}*/
 
 // way3 (fastest and best way)//
 
@@ -85,27 +32,6 @@ function makeInvisible2(){
     container3.classList.remove('toggle')
 }
 
-
-/*function integerplus(){
-    const less = document.querySelector('.left');
-    const number = document.querySelector('.number');
-    const add = document.querySelector('.right');
-
-    let interger=0;
-    interger += 1;
-    number.innerHTML= interger;
-
-}
-function integerminus(){
-    const less = document.querySelector('.left');
-    const number = document.querySelector('.number');
-    const add = document.querySelector('.right');
-
-    let num1 = 0;
-    num1= num1 - 1;
-    number.innerHTML= num1;
-
-}*/
 
 
 
@@ -158,51 +84,58 @@ function Hidde() {
 }
  //intentolista platos para la seleccion hacia la tercera pantalla, igual me he flipado//
  
+ //trying a forEach loop//
  
- /*Chicken veggie salad-0
- Tacos-1
- Multon Curry-2
- Bravas-3
- Carrot Cake-4
- Cheesecake-5
- Brownie-6
- Pancakes-7
- Pizza-9
- let dishes =3
- switch(dishes){
-     case 0:
-         console.log("Chicken Veggie Salad")
-    break;
-    case 1:
-        console.log("Tacos")
-    break;
-    case 3:
-        console.log("Multton Curry")
-    break;
-    case 4:
-        console.log("Bravas")
-    break;
-    case 5:
-    console.log("Carrot Cake")
-    break;
-    case 6:
-        console.log("Cheesecake")
-    break;
-    case 7:
-        console.log("Brownie")
-    break;
-    case 8:
-        console.log("Pancakes")
-    break;
-    case 9:
-        console.log("Pizza")
-    break;
- }
+let loadPlates =[
+    {
+        id : 1,
+        precio:52,
+        img:'<img src="images/dishes/chicke_veggie_salad.jpg" alt="imagen comida" class="unic-dish">',
+        h1:'Chicken Veggie Salad',
+        h2:'With cheese sauce',
+        
+    },
+    {
+        id : 1,
+        precio:23,
+        img:'<img src="images/dishes/curry.jpg" alt="imagen comida" class="unic-dish">',
+        h1:'Chicken Veggie Salad',
+        h2:'With cheese sauce',
+        
+    },
+    {
+        id : 1,
+        precio:21,
+        img:'<img src="images/dishes/tacos.jpg">',
+        h1:'Chicken Veggie Salad',
+        h2:'With cheese sauce',
+        
+    },
+   
+]
+let containerbox = document.querySelector ('.containerbox');
 
- */
-var container3="container3";
-switch(container2){
-    case1:
-    document.write(<h2 class="dish-titl ">Chicken Veggie Salad</h2>);
-    break;
+loadPlates.forEach((name,index) =>{
+   containerbox.innerHTML+=`
+    <div class ="plato">
+    <img>${name.img}</img>
+    <p>${name.precio}</p>
+    <h1>${name.h1}</h1>
+    <h2>${name.h2}</h2>
+    </div>
+    <div class="quantity">
+    <button class="left" data-indice ="${indice}">-</button>
+    <p class="number">02</p>
+    <button class="right" data-indice ="${indice}">+</button>
+    </div>
+    </div>
+    `;
+});
+function fillPage(){
+containerbox.innerHTML =''
+}
+
+function plusItem(indice){
+    loadPlates[indice].cantidad ++
+    plusItem()
 }
