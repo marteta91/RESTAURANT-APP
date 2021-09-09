@@ -1,3 +1,85 @@
+
+let price = 0
+let getOwnPropertyNames = ""
+let description = ""
+let img = jpg
+
+/*
+let cart = []
+let dishes = [
+    {
+        price: 12,
+        name: "Chicken Veggie Salad",
+        description: "With cheese sauce",
+        img: "images/dishes/chicke_veggie_salad.jpg"
+    },
+
+    {
+        price: 8,
+        name:"Tacos",
+        description: "With Guacamole",
+        img: "images/dishes/tacos.jpg"
+    },
+
+    {
+        price: 12,
+        name: "Mutton Curry",
+        description: "With with basmati rice<",
+        img: "images/dishes/curry.jpg"     
+    },
+
+    {
+        price: 5,
+        name: "Bravas",
+        description: "With salsa picante",
+        img: "images/dishes/patatas-bravas.jpg"
+    },
+
+    {
+        price: 3,
+        name: "Carrot Cake",
+        description: "One portion",
+        img: "images/dishes/carrot-cake.jpg"
+    },
+
+    {
+        price: 3,
+        name: "Cheesecake",
+        description: "One portion",
+        img: "images/dishes/cheesecake.jpg"
+    },
+
+    {
+        price: 3,
+        name: "Brownie",
+        description: "One portion",
+        img: "images/dishes/brownie.jpg"      
+    },
+
+    {
+        price: 8, 
+        name: "Pancakes",
+        description: "6 unites",
+        img: "images/dishes/pancakes.jpg"      
+    },
+
+    {
+        price: 8,
+        name: "Pizza",
+        description: "Three portions",
+        img: "images/dishes/pizza.jpg"      
+    }
+]*/
+
+//Object.getOwnPropertyNames()
+
+// Imprime nombres de variables y valores usando Array.forEach
+//Object.getOwnPropertyNames(obj).forEach(function(val, idx, array) {
+  //  print(val + " -> " + obj[val]);
+  
+
+//para pasar pantalla
+
 function makeVisible1(){
     const container2 =document.querySelector('.container2')
     container2.classList.add('toggle')

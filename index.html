@@ -44,29 +44,34 @@
                   Desserts
             
               </button>
+
+               <!--
               <button class="nav four">
                 
                 <img src="/images/drinks-icon.png" class="pic drinks">
                 Drinks
           
             </button>
+        
             <button class="nav four">
                 
                 <img src="/images/tapas2.png" class="pic appetizers">
                 Appetizers
           
             </button>
+        
             <button class="nav four">
                 
                 <img src="/images/soup-icon.png" class="pic soup">
                Soups
           
             </button>
+        -->
           </nav>
     
           <main class="dishes">
               <div class="column1">
-                    <button class="dish one">
+                    <div class="dish one">
                   <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/chicke_veggie_salad.jpg" alt="">
 
                   <div class="dish-description">
@@ -85,9 +90,9 @@
 
                     </div>
 
-                
-
                     </div>
+
+              
 
                     <div class="dish two">
                   <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/tacos.jpg" alt="">
@@ -152,9 +157,9 @@
                   </div>
                   
                     <div class="quantity"> 
-                      <button class="less"id="minus">-</button>
+                      <button class="left"id="minus">-</button>
                       <p class="number" id="numberPlace">02</p>
-                      <button class="add" id="plus">+</button>
+                      <button class="right" id="plus">+</button>
 
                     </div>
 
@@ -213,6 +218,8 @@
 
                    </div>
               </div>
+
+
               <div class ="column3">
                    <div class="dish seven">
             <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/brownie.jpg" alt="">
@@ -226,10 +233,9 @@
               </div>
               
                 <div class="quantity">
-                    <button class="left" id="minus">-</button>
-                    <span class="number" id="numberPlace">0</span>
-                    <button  class="right" id="plus">+</button>
-
+                  <button class="left">-</button>
+                  <p class="number">02</p>
+                  <button class="right">+</button>
 
                 </div>
 
@@ -290,7 +296,7 @@
                    </div>
               </div>    
 
-        </main>
+         </main>
 
                 <div class ="content5">
                     <img src = "icons/home-icon.png"></img>
@@ -394,19 +400,19 @@
                 </div>
 
                 <section class="orangesquare">
-                <div class="It Subtotal">
+                <div class="num Subtotal">
                     <h1>Subtotal</h1>
                     <h1>$96.00</h1>
                 </div>
-                <div class="It Take&Fees">
+                <div class="num Take&Fees">
                     <h1>Take & Fees</h1>
                     <h1>$2.00</h1>
                 </div>
-                <div class="It Delivery">
+                <div class="num Delivery">
                     <h1> Delivery</h1>
                     <h1> Free</h1>
                 </div>
-                <div class="It Total">
+                <div class="num Total">
                     <h1>Total</h1>
                     <h1>$98.00</h1>
                 </div>

@@ -55,7 +55,7 @@
     }
     
     
-    .It{
+    .num{
     width: 93%;
     height: 36px;
     border-radius: 12px;
@@ -70,7 +70,7 @@
     background-color:#f55318;
     }
 
-    .It h1 {
+    .num h1 {
         background-color:#f55318;
     }
     .container2.toggle{
