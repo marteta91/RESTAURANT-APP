@@ -1,11 +1,12 @@
-/*const dishes = [
+const dishes = [
 let price = 0
 let getOwnPropertyNames = ""
 let description = ""
 let img = jpg
 
-
-Array = [
+/*
+let cart = []
+let dishes = [
     {
         price: 12,
         name: "Chicken Veggie Salad",
