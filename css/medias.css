@@ -21,9 +21,25 @@
         display: none;
     }
 
+    .logoweb{
+        width: 30px;
+        height: 30px;
+    }
+
+    .header2{
+        font-size: 16px;
+    }
+
+    .texts2 {
+        margin-left: 10%;
+    }
+
+    .menu button {
+        font-size: 10px;
+    }
 
     .menu{
-        width: 320px;
+        max-width: 90%;
         height: 35%;
         padding: 2%;
         display: flex;
@@ -46,9 +62,15 @@
      }
     
      .nav {
-        width: 75px;
+        width: 60px;
         cursor: pointer;
-        
+        margin: 0px;
+        margin-right: 2px;
+    }
+
+    .nav img{
+        width: 30px;
+        height: 30px;
     }
 
     .Buttonorange{
@@ -66,8 +88,6 @@
         margin-left: 10%;
     }
 
-    .content5{
-        display:flex;
-    }
+    
 }
 
