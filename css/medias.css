@@ -1,5 +1,5 @@
 /*reposiveerticalmobil*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
 
     .container1{
         width: 100%;
@@ -84,10 +84,19 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 30%;
+        margin-top: 10%;
         margin-left: 10%;
     }
 
+    .column1 {
+        display: block;
+    }
+    .column2{
+        display: block;
+    }
+    .column3{
+        display: block;
+    }
     
 }
 
