@@ -17,14 +17,14 @@
 }
 .center{
     display: flex;
-    position:fixed;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height:80%;
+    width: 35%;
+    height: 72%;
     border-radius: 20px;
-    margin-top: 20%;
+    margin-top: 0%;
     
 }
 .unic-dish{
@@ -82,6 +82,6 @@ border: rgb(148, 148, 148) 1px solid;
     border-radius: 17px;
 
 }
-.container3.toggle{
-    display: block;
+.container3.details{
+    display: flex;
 }

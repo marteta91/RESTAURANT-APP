@@ -14,6 +14,10 @@
     width: 100%;
     height:100%;
 }
+
+.empty{
+    display: none;
+}
 .containerbox{
 
     width: 50%;
@@ -23,6 +27,7 @@
 
 .compra{
     margin: 5%;
+    
 }
 
 .buy{
@@ -41,7 +46,7 @@
  }
  
 .buy::-webkit-scrollbar-thumb {
- 
+
     width: 5px;
     background: #f55318;
  }
@@ -97,4 +102,12 @@
         display: none;
     }
 
+    .empty.show{
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        color: #f55318;
+    }
     

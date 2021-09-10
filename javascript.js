@@ -72,30 +72,32 @@
 
 
 
-//para pasar pantalla
-
+//para ver el carrito
 function makeVisible1(){
     const container2 =document.querySelector('.container2')
     container2.classList.add('toggle')
 }
+//para ir atrás de carrito a pagina 1
 function makeInvisible1(){
     const container2 =document.querySelector('.container2')
     container2.classList.remove('toggle')
 }
-
-
-
 //para ver detalles de la foto
-
-// way3 (fastest and best way)//
-
 function makeVisible2(){
     const container3 =document.querySelector('.container3')
-    container3.classList.add('toggle')
+    container3.classList.add('details')
 }
+//para salir de detalles foto (pag3)
 function makeInvisible2(){
     const container3 =document.querySelector('.container3')
-    container3.classList.remove('toggle')
+    container3.classList.remove('details')
+}
+//para que desaparezca toda la compra
+function eliminar(){
+    const compra = document.querySelector('.compra')
+    const empty = document.querySelector('.empty')
+    compra.classList.add('none');
+    empty.classList.add('show')
 }
 
 //primer botón suma y resta
@@ -127,15 +129,10 @@ window.onload=function(){
    
 }
 
-//para que desaparezca toda la compra
 
 
-function eliminar(){
-    const compra = document.querySelector('.compra')
-    compra.classList.add('none')
-	
-}
 
+/*
 //intento de eliminar platos con icono papelera (solo desaparece si le das al plato)
 let dishes = document.querySelectorAll('#delete div');
 
@@ -147,5 +144,5 @@ function Hidde() {
     this.style.opacity= 0;
 }
 
-
+*/
  
