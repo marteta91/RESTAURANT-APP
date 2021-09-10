@@ -1,4 +1,4 @@
-/*let dishes = [
+let dishes = [
     {
         price: 12,
         name: "Chicken Veggie Salad",
@@ -62,7 +62,7 @@
         img: "images/dishes/pizza.jpg"      
     }
 ]
-*/
+
 
 //Object.getOwnPropertyNames()
 
@@ -88,10 +88,6 @@ function makeVisible2(){
     container3.classList.add('details')
 }
 
-function makeVisible2(){
-    const container3 =document.querySelector('.container3')
-    container3.classList.add('details')
-}
 //para salir de detalles foto (pag3)
 function makeInvisible2(){
     const container3 =document.querySelector('.container3')
@@ -136,18 +132,4 @@ window.onload=function(){
 
 
 
-
-/*
-//intento de eliminar platos con icono papelera (solo desaparece si le das al plato)
-let dishes = document.querySelectorAll('#delete div');
-
-dishes.forEach(box => {
-    box.addEventListener('click', Hidde)
-})
-
-function Hidde() {
-    this.style.opacity= 0;
-}
-
-*/
  
