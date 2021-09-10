@@ -87,6 +87,11 @@ function makeVisible2(){
     const container3 =document.querySelector('.container3')
     container3.classList.add('details')
 }
+
+function makeVisible2(){
+    const container3 =document.querySelector('.container3')
+    container3.classList.add('details')
+}
 //para salir de detalles foto (pag3)
 function makeInvisible2(){
     const container3 =document.querySelector('.container3')
