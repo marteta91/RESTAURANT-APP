@@ -1,12 +1,4 @@
-
-let price = 0
-let getOwnPropertyNames = ""
-let description = ""
-let img = jpg
-
-/*
-let cart = []
-let dishes = [
+/*let dishes = [
     {
         price: 12,
         name: "Chicken Veggie Salad",
@@ -69,14 +61,16 @@ let dishes = [
         description: "Three portions",
         img: "images/dishes/pizza.jpg"      
     }
-]*/
+]
+*/
 
 //Object.getOwnPropertyNames()
 
 // Imprime nombres de variables y valores usando Array.forEach
 //Object.getOwnPropertyNames(obj).forEach(function(val, idx, array) {
   //  print(val + " -> " + obj[val]);
-  
+
+
 
 //para pasar pantalla
 
@@ -132,7 +126,6 @@ window.onload=function(){
     }
    
 }
-
 
 //para que desaparezca toda la compra
 

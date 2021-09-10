@@ -8,9 +8,8 @@
         flex-direction: column;
     }
     .container2{
-        width: 100%;
+        max-width: 100%;
         height: 100%;
-        margin:20px;
         display: none;
         
     }
@@ -19,6 +18,10 @@
         width: 100%;
         height: 100%;
         display: none;
+    }
+
+    .containerbox{
+        width: 80%;
     }
 
     .logoweb{
@@ -49,16 +52,16 @@
     }
     
     
-    ::-webkit-scrollbar {
-        height: 7px;
+    .buy::-webkit-scrollbar {
+        width: 5px;
         background: #fff;
      
      }
      
-    .byy::-webkit-scrollbar-thumb {
+    .buy::-webkit-scrollbar-thumb {
      
-        height: 7px;
-        background: orange;
+        width: 5px;
+        background: #f55318;
      }
     
      .nav {

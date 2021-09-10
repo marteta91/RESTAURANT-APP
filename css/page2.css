@@ -30,18 +30,20 @@
     -webkit-overflow-scrolling: touch;
     height: 381px;
     margin-bottom: -22%;
+    display: flex;
+    flex-direction: column;
 }
 
-::-webkit-scrollbar {
-    height: 7px;
+.buy::-webkit-scrollbar {
+    width: 5px;
     background: #fff;
  
  }
  
- ::-webkit-scrollbar-thumb {
+.buy::-webkit-scrollbar-thumb {
  
-    height: 5px;
-    background: black;
+    width: 5px;
+    background: #f55318;
  }
 
 /*footer2*/
@@ -50,6 +52,7 @@
     border-radius: 15px;
     margin-top: 28%;
     height: 30%;
+    padding-bottom: 20px;
     
     }
     
@@ -64,7 +67,7 @@
     padding: 10px;
     background-color: white;
     font-weight: bold;
-    margin-left: 18%;
+    margin-left: 20%;
     }
     
     
