@@ -1,11 +1,3 @@
-
-let price = 0
-let getOwnPropertyNames = ""
-let description = ""
-let img = jpg
-
-/*
-let cart = []
 let dishes = [
     {
         price: 12,
@@ -69,16 +61,11 @@ let dishes = [
         description: "Three portions",
         img: "images/dishes/pizza.jpg"      
     }
-]*/
+]
 
-//Object.getOwnPropertyNames()
 
-// Imprime nombres de variables y valores usando Array.forEach
-//Object.getOwnPropertyNames(obj).forEach(function(val, idx, array) {
-  //  print(val + " -> " + obj[val]);
-  
 
-//para pasar pantalla
+//another line //
 
 function makeVisible1(){
     const container2 =document.querySelector('.container2')
@@ -155,7 +142,7 @@ window.onload=function(){
 
 
 //intento de eliminar platos con icono papelera (solo desaparece si le das al plato)
-let dishes = document.querySelectorAll('#delete div');
+/*let dishes = document.querySelectorAll('#delete div');
 
 dishes.forEach(box => {
     box.addEventListener('click', Hidde)
@@ -167,6 +154,22 @@ function Hidde() {
  //intentolista platos para la seleccion hacia la tercera pantalla, igual me he flipado//
  
  //trying a forEach loop//
+/*function addIt (indice){
+menu
+}
+let cart =[];
+
+function changePage(){
+    function hidePage1()
+    function showPage2()
+    function platesPage2()
+}
+function hidePage1(){
+
+}
+function showPage2(){
+
+}
  
 let loadPlates =[
     {
@@ -195,7 +198,7 @@ let loadPlates =[
     },
    
 ]
-let containerbox = document.querySelector ('.containerbox');
+let containerbox = document.querySelector ('.container2');
 
 loadPlates.forEach((name,index) =>{
    containerbox.innerHTML+=`
@@ -221,3 +224,14 @@ function plusItem(indice){
     loadPlates[indice].cantidad ++
     plusItem()
 }
+
+ /*let container2 = document.querySelector ('.container2');
+ let containerBox = document.querySelector ('.containerbox');
+ let del = document.querySelector ('.delete');
+ let back = document.querySelector ('.back')
+ let containerBox = document.querySelector ('containerbox')
+ let containerBox = document.querySelector ('containerbox')
+ let containerBox = document.querySelector ('containerbox')
+ let containerBox = document.querySelector ('containerbox')
+
+ let cart = []*/
