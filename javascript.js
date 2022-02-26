@@ -122,16 +122,14 @@ function renderProducts(menuItem) {
 
            <div class="dish-description">
            <div class="dish-name">
-               <h3 class="dish-price">${yass.price}</h3>
+               <h3 class="dish-price">$${yass.price}</h3>
                <h2 class="dish-title">${yass.name}</h2>
                <h3 class="dish-subtitle">${yass.description}</h3>
 
            </div>
            
            <div class="quantity">
-               <button class="left" id="minus">${yass.buttonminus}</button>
-               <span class="number" id="numberPlace">${yass.number}</span>
-               <button onclick ="addToCart(${yass.id})" class="right" id="plus">${yass.buttonplus}</button>
+               <button onclick ="addToCart(${yass.id})" class="addToCart-right" >Add To Cart</button>
            </div>
 
        </div>
@@ -154,6 +152,7 @@ function addToCart(id) {
       ...item,
       numberOfUnits: 1,
     });
+    alert("product added to cart; Scroll down to open your cart");
   }
   updateCart();
 }

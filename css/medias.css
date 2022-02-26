@@ -84,7 +84,6 @@
         width: 60px;
         height: 60px;
         display: flex;
-        transform: translate(-75px,1520px);
         
     }
     .dishes{
@@ -128,5 +127,4 @@
         left: -14%;
     }
 
-}
 

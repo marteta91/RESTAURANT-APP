@@ -97,3 +97,13 @@
     display: flex;
     justify-content: space-around;
 }
+.addToCart-right{
+    width:90px;
+    height: 35px;
+    background-color: #FF6B01;
+    border-color: #FF6B01;
+    border-radius: 10px;
+    color:aliceblue;
+    border-style: none;
+
+}
