@@ -1,237 +1,292 @@
-let dishes = [
-    {
-        price: 12,
-        name: "Chicken Veggie Salad",
-        description: "With cheese sauce",
-        img: "images/dishes/chicke_veggie_salad.jpg"
-    },
+let plates = [
+  {
+    id: 0,
+    price: 12,
+    name: "Chicken Veggie Salad",
+    category: "Dinner",
+    description: "With cheese sauce",
+    img: "images/dishes/chicke_veggie_salad.jpg",
+    buttonplus: "+",
+    buttonminus: "-",
+    number: "0",
+  },
 
-    {
-        price: 8,
-        name:"Tacos",
-        description: "With Guacamole",
-        img: "images/dishes/tacos.jpg"
-    },
+  {
+    id: 1,
+    price: 8,
+    name: "Tacos",
+    description: "With Guacamole",
+    img: "images/dishes/tacos.jpg",
+    buttonplus: "+",
+    category: "fastfood",
+    buttonminus: "-",
+    number: "0",
+  },
 
-    {
-        price: 12,
-        name: "Mutton Curry",
-        description: "With with basmati rice<",
-        img: "images/dishes/curry.jpg"     
-    },
+  {
+    id: 2,
+    price: 12,
+    name: "Mutton Curry",
+    description: "With with basmati rice<",
+    img: "images/dishes/curry.jpg",
+    buttonplus: "+",
+    buttonminus: "-",
+    category: "dinner",
+    number: "0",
+  },
 
-    {
-        price: 5,
-        name: "Bravas",
-        description: "With salsa picante",
-        img: "images/dishes/patatas-bravas.jpg"
-    },
+  {
+    id: 3,
+    price: 5,
+    name: "Bravas",
+    category: "fastfood",
+    description: "With salsa picante",
+    img: "images/dishes/patatas-bravas.jpg",
+    buttonplus: "+",
+    buttonminus: "-",
 
-    {
-        price: 3,
-        name: "Carrot Cake",
-        description: "One portion",
-        img: "images/dishes/carrot-cake.jpg"
-    },
+    number: "0",
+  },
 
-    {
-        price: 3,
-        name: "Cheesecake",
-        description: "One portion",
-        img: "images/dishes/cheesecake.jpg"
-    },
+  {
+    id: 4,
+    price: 3,
+    name: "Carrot Cake",
+    description: "One portion",
+    img: "images/dishes/carrot-cake.jpg",
+    buttonplus: "+",
+    buttonminus: "-",
+    category: "desserts",
+    number: "0",
+  },
 
-    {
-        price: 3,
-        name: "Brownie",
-        description: "One portion",
-        img: "images/dishes/brownie.jpg"      
-    },
+  {
+    id: 5,
+    price: 3,
+    name: "Cheesecake",
+    description: "One portion",
+    category: "desserts",
+    img: "images/dishes/cheesecake.jpg",
+    buttonplus: "+",
+    buttonminus: "-",
+    number: "0",
+  },
 
-    {
-        price: 8, 
-        name: "Pancakes",
-        description: "6 unites",
-        img: "images/dishes/pancakes.jpg"      
-    },
+  {
+    id: 6,
+    price: 3,
+    name: "Brownie",
+    description: "One portion",
+    category: "desserts",
+    img: "images/dishes/brownie.jpg",
+    buttonplus: "+",
+    buttonminus: "-",
+    number: "0",
+  },
 
-    {
-        price: 8,
-        name: "Pizza",
-        description: "Three portions",
-        img: "images/dishes/pizza.jpg"      
-    }
-]
+  {
+    id: 7,
+    price: 8,
+    name: "Pancakes",
+    category: "desserts",
+    description: "6 unites",
+    img: "images/dishes/pancakes.jpg",
+    buttonplus: "+",
+    buttonminus: "-",
+    number: "0",
+  },
 
+  {
+    id: 8,
+    price: 8,
+    name: "Pizza",
+    category: "Dinner",
+    description: "Three portions",
+    img: "images/dishes/pizza.jpg",
+    buttonplus: "+",
+    buttonminus: "-",
+    number: "0",
+  },
+];
+let containerbox = document.querySelector(".dishes");
+let otherPlates = document.querySelector(".buy");
+let subTotal = document.querySelector(".num Subtotal");
+let button = document.querySelectorAll(".nav");
 
+function renderProducts(menuItem) {
+  plates.forEach((yass) => {
+    containerbox.innerHTML += `
+   <div class="column1">
+     <div class="dish one">
+         <img class="img-dish-one" onclick="makeVisible2()" src="${yass.img}">
 
-//another line //
+           <div class="dish-description">
+           <div class="dish-name">
+               <h3 class="dish-price">${yass.price}</h3>
+               <h2 class="dish-title">${yass.name}</h2>
+               <h3 class="dish-subtitle">${yass.description}</h3>
 
-function makeVisible1(){
-    const container2 =document.querySelector('.container2')
-    container2.classList.add('toggle')
-}
-function makeInvisible1(){
-    const container2 =document.querySelector('.container2')
-    container2.classList.remove('toggle')
-}
-
-
-//___________________________________
-
-
-function eliminar(){
-    const compra = document.querySelector('.compra')
-    compra.classList.add('none')
-	
-}
-
-
-
-
-
-// way3 (fastest and best way)//
-
-function makeVisible2(){
-    const container3 =document.querySelector('.container3')
-    container3.classList.add('toggle')
-}
-function makeInvisible2(){
-    const container3 =document.querySelector('.container3')
-    container3.classList.remove('toggle')
-}
-
-
-
-
-
-//---------------------------------------------------
-//esta función solo funciona en el primer plato, 
-//hemos intentado poner en los demás epro no funciona
-//puede que sea por el id jajajaja ahí quedamos ♥
-
-
-window.onload=function(){
-    var minusBtn = document.getElementById("minus")
-        plusBtn = document.getElementById("plus")
-        numberPlace = document.getElementById("numberPlace"),
-        number = 0, /// number value
-        min = 0, /// min number
-        max = 30; /// max number
-         
-     
-       
-    minusBtn.onclick = function(){
-        if (number>min){
-           number = number-1; /// Minus 1 of the number
-           numberPlace.innerHTML = number ; /// Display the value in place of the number
-           console.log(number,numberPlace)
-        }
-                
-    }
-    plusBtn.onclick = function(){
-        if(number<max){
-           number = number+1;
-           numberPlace.innerHTML = number ; /// Display the value in place of the number
-        }     
-     
+           </div>
            
-    }
-   
-}
+           <div class="quantity">
+               <button class="left" id="minus">${yass.buttonminus}</button>
+               <span class="number" id="numberPlace">${yass.number}</span>
+               <button onclick ="addToCart(${yass.id})" class="right" id="plus">${yass.buttonplus}</button>
+           </div>
 
+       </div>
 
-//intento de eliminar platos con icono papelera (solo desaparece si le das al plato)
-/*let dishes = document.querySelectorAll('#delete div');
-
-dishes.forEach(box => {
-    box.addEventListener('click', Hidde)
-})
-
-function Hidde() {
-    this.style.opacity= 0;
-}
- //intentolista platos para la seleccion hacia la tercera pantalla, igual me he flipado//
- 
- //trying a forEach loop//
-/*function addIt (indice){
-menu
-}
-let cart =[];
-
-function changePage(){
-    function hidePage1()
-    function showPage2()
-    function platesPage2()
-}
-function hidePage1(){
-
-}
-function showPage2(){
-
-}
- 
-let loadPlates =[
-    {
-        id : 1,
-        precio:52,
-        img:'<img src="images/dishes/chicke_veggie_salad.jpg" alt="imagen comida" class="unic-dish">',
-        h1:'Chicken Veggie Salad',
-        h2:'With cheese sauce',
-        
-    },
-    {
-        id : 1,
-        precio:23,
-        img:'<img src="images/dishes/curry.jpg" alt="imagen comida" class="unic-dish">',
-        h1:'Chicken Veggie Salad',
-        h2:'With cheese sauce',
-        
-    },
-    {
-        id : 1,
-        precio:21,
-        img:'<img src="images/dishes/tacos.jpg">',
-        h1:'Chicken Veggie Salad',
-        h2:'With cheese sauce',
-        
-    },
-   
-]
-let containerbox = document.querySelector ('.container2');
-
-loadPlates.forEach((name,index) =>{
-   containerbox.innerHTML+=`
-    <div class ="plato">
-    <img>${name.img}</img>
-    <p>${name.precio}</p>
-    <h1>${name.h1}</h1>
-    <h2>${name.h2}</h2>
-    </div>
-    <div class="quantity">
-    <button class="left" data-indice ="${indice}">-</button>
-    <p class="number">02</p>
-    <button class="right" data-indice ="${indice}">+</button>
-    </div>
-    </div>
+   </div>
     `;
+  });
+}
+
+renderProducts();
+
+let cart = [];
+
+function addToCart(id) {
+  if (cart.some((item) => item.id === id)) {
+    alert("product already in cart");
+  } else {
+    const item = plates.find((yass) => yass.id === id);
+    cart.push({
+      ...item,
+      numberOfUnits: 1,
+    });
+  }
+  updateCart();
+}
+
+function updateCart() {
+  renderCartItems();
+  renderSubtotal();
+}
+function renderSubtotal() {
+  let totalPrice = 0,
+    totalItems = 0;
+  cart.forEach((item) => {
+    totalPrice += item.price * item.numberOfUNits;
+    totalItems += item.numberOfUNits;
+  });
+  subTotal.innerHTML = `subTotal (${totalItems} items): $${totalPrice}`;
+}
+
+function renderCartItems() {
+  otherPlates.innerHTML = "";
+  cart.forEach((item) => {
+    otherPlates.innerHTML += `
+        <div class="dish five">
+        <img class="img-dish-one" onclick="makeVisible2()" src="${item.img}">
+
+          <div class="dish-description">
+          <div class="dish-name">
+              <h3 class="dish-price">${item.price}</h3>
+              <h2 class="dish-title">${item.name}</h2>
+              <h3 class="dish-subtitle">${item.description}</h3>
+
+          </div>
+          
+          <div class="quantity">
+              <button onclick = "changeNumberOfUnits('minus', ${item.id})" class="left" id="minus">-</button>
+              <span class="number" id="numberPlace">${item.numberOfUnits}</span>
+              <button onclick = "changeNumberOfUnits('plus', ${item.id})" class="right" id="plus">+</button>
+          </div>
+
+        </div>
+
+     </div>
+  `;
+  });
+}
+//change number of units
+//action is the minus or pluss on the onclick function
+function changeNumberOfUnits(action, id) {
+  cart = cart.map((item) => {
+    let numberOfUnits = item.numberOfUnits;
+
+    if (item.id === id) {
+      if (action === "minus" && numberOfUnits > 1) {
+        numberOfUnits--;
+      } else if (action === "plus") {
+        numberOfUnits++;
+      }
+    }
+    return {
+      ...item,
+      numberOfUnits,
+    };
+  });
+  updateCart();
+}
+
+button.forEach(function (btn) {
+  btn.addEventListener("click", function addIt(e) {
+    let category = e.currentTarget.dataset.id;
+    if (category === plates.category) {
+      plates.forEach((rojo) => {
+        cate.innerHTML = "";
+        cate.innerHTML += `
+       <div class="column1">
+         <div class="dish one">
+             <img class="img-dish-one" onclick="makeVisible2()" src="${rojo.img}">
+    
+               <div class="dish-description">
+               <div class="dish-name">
+                   <h3 class="dish-price">${rojo.price}</h3>
+                   <h2 class="dish-title">${rojo.name}</h2>
+                   <h3 class="dish-subtitle">${rojo.description}</h3>
+    
+               </div>
+               
+               <div class="quantity">
+                   <button class="left" id="minus">${rojo.buttonminus}</button>
+                   <span class="number" id="numberPlace">${rojo.number}</span>
+                   <button onclick ="addToCart(${rojo.id})" class="right" id="plus">${rojo.buttonplus}</button>
+               </div>
+    
+           </div>
+    
+       </div>
+        `;
+      });
+    }
+  });
 });
-function fillPage(){
-containerbox.innerHTML =''
+
+cate = document.querySelector(".cate");
+pic = document.querySelector(".pic");
+console.log(cate);
+
+// Imprime nombres de variables y valores usando Array.forEach
+//Object.getOwnPropertyNames(obj).forEach(function(val, idx, array) {
+//  print(val + " -> " + obj[val]);
+
+//para ver el carrito
+function makeVisible1() {
+  const container2 = document.querySelector(".container2");
+  container2.classList.add("toggle");
+}
+//para ir atrás de carrito a pagina 1
+function makeInvisible1() {
+  const container2 = document.querySelector(".container2");
+  container2.classList.remove("toggle");
+}
+//para ver detalles de la foto
+function makeVisible2() {
+  const container3 = document.querySelector(".container3");
+  container3.classList.add("details");
 }
 
-function plusItem(indice){
-    loadPlates[indice].cantidad ++
-    plusItem()
+//para salir de detalles foto (pag3)
+function makeInvisible2() {
+  const container3 = document.querySelector(".container3");
+  container3.classList.remove("details");
 }
-
- /*let container2 = document.querySelector ('.container2');
- let containerBox = document.querySelector ('.containerbox');
- let del = document.querySelector ('.delete');
- let back = document.querySelector ('.back')
- let containerBox = document.querySelector ('containerbox')
- let containerBox = document.querySelector ('containerbox')
- let containerBox = document.querySelector ('containerbox')
- let containerBox = document.querySelector ('containerbox')
-
- let cart = []*/
+//para que desaparezca toda la compra
+function eliminar() {
+  const compra = document.querySelector(".compra");
+  const empty = document.querySelector(".empty");
+  compra.classList.add("none");
+  empty.classList.add("show");
+}

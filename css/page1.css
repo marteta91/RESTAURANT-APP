@@ -89,7 +89,11 @@
   }
   
   
-  .container1.hide{
+.container1.hide{
 
     display:none;
+}
+.header-imgs{
+    display: flex;
+    justify-content: space-around;
 }

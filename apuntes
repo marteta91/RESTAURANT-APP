@@ -123,38 +123,46 @@ function integerminus(){
  }
 
  */
-//funciones :)
 
-/*function printPlato(elemento, indice){
-    menuContainer.innerHTML += `<article>
-    <img src="${elemento.img}" width="200px" alt="">
-    <h2>${elemento.nombre}</h2>
-    <p>${elemento.precio}</p> 
-            <div class="counter">
-                <button data-index="${indice}" class="add">+</button>
-                <input type="text" value="${elemento.cantidad}">
-                <button onclick='minusItem(${indice})' class="minus">-</button>
-            </div>   
-    </article>`
+ 
+/*dishes.forEach((info) => {
+    const Title = document.createElement ('h2');
+    Title.dishes.classList ('dish-title');
+    Title.textContent =info.nombre;
+    // Imagen
+    const Image = document.createElement('img-');
+    Image.dishes.classList.add('img-dish-one');
+    Image.setAttribute('src', info.imagen);
+    // Precio
+    const Precio = document.createElement('p');
+    Precio.dishes.classList.add('card-text');
+    Precio.textContent = info.precio + '€';
+    // Boton 
+    const Boton = document.createElement('button');
+    Boton.classList.add('btn', 'btn-primary');
+    Boton.textContent = '+';
+    Boton.setAttribute('marcador', info.id);
+    Boton.addEventListener('click', añadirproductocarrito);
+     // Insertamos
+     dishes.appendChild(Image);
+     Image.appendChild(Title);
+     Image.appendChild(Precio);
+     Image.appendChild(Boton);
+     items.appendChild(item);
+
+
+
+/*
+//intento de eliminar platos con icono papelera (solo desaparece si le das al plato)
+let dishes = document.querySelectorAll('#delete div');
+
+dishes.forEach(box => {
+    box.addEventListener('click', Hidde)
+})
+
+function Hidde() {
+    this.style.opacity= 0;
 }
 
-function loadPlatos(){
-menuContainer.innerHTML = ''
-listaPlatos.forEach((element, index) => printPlato(element, index))
-}
+*/
 
-function plusItem(indice){
-listaPlatos[indice].cantidad++
-loadPlatos()
-addTocart()
-
-}
-//Ejecutar funciones
-
-document.addEventListener('click', function(event){
-let indiceByListener = event.target.dataset.index
-if (indiceByListener){
-    plusItem(indiceByListener)
-}
-De Carlos Pinilla para todos:  11:31 AM
-let menuContainer = document.getElementById('menu-container')

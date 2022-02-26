@@ -10,11 +10,13 @@
 <body>
     <div class ="container1">
      <div class ="content1">
-        <img src = "images/logoeat.png" class= "logoweb"></img>
+        <div class ="header-imgs">
+            <img src = "images/logoeat.png" class= "logoweb"></img>
+            <img src = "icons/yellow.png" class= "Buttonorange" onclick="makeVisible1()"></img>
+        </div>
            <div class ="texts">
                
             <h2 class ="header2">Food House</h2>
-            <img src = "icons/yellow.png" class= "Buttonorange" onclick="makeVisible1()"></img>
           </div>
             <div class ="texts2">
                <h1>Food For Home</h1>
@@ -23,22 +25,24 @@
         
           <nav class="menu">
                     
-              <button class="nav one">
+              <button class="nav one" data-id ="Breakfast">
                 
                   <img src="/images/Breakfast-def.png "class="pic Breakfast">
                   Break
               </button>
-              <button class="nav two">
+              <a href ="category.html">
+              <button class="nav two" data-id ="fastfood" >
                 
                   <img src="/images/fastfooddef.png"class="pic fastfood">
                   FastFood
               </button>
-              <button class="nav three">
+              </a>
+              <button class="nav three" data-id ="dinner">
             
                   <img src="/images/Dinner.jpg" class="pic Dinner">
                   Dinner
               </button>
-              <button class="nav four">
+              <button class="nav four" data-id ="Desserts">
                 
                   <img src="/images/Desserts.jpg" class="pic Desserts">
                   Desserts
@@ -46,21 +50,21 @@
               </button>
 
                
-              <button class="nav four">
+              <button class="nav four" data-id="drinks">
                 
                 <img src="/images/drinks-icon.png" class="pic drinks">
                 Drinks
           
             </button>
         
-            <button class="nav four">
+            <button class="nav four" data-id="appetizers">
                 
                 <img src="/images/tapas2.png" class="pic appetizers">
                 Appetizers
           
             </button>
         
-            <button class="nav four">
+            <button class="nav four" data-id="soups">
                 
                 <img src="/images/soup-icon.png" class="pic soup">
                Soups
@@ -69,232 +73,215 @@
     
           </nav>
     
-          <main class="dishes">
-              <div class="column1">
+          <main class="dishes" id="menu-container">
+      <!---    <div class="column1">
                     <div class="dish one">
-                  <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/chicke_veggie_salad.jpg" alt="">
+                        <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/chicke_veggie_salad.jpg" alt="">
 
-                  <div class="dish-description">
-                      <div class="dish-name">
-                        <h3 class="dish-price">$ 12.00</h3>
-                        <h2 class="dish-title">Chicken Veggie Salad</h2>
-                        <h3 class="dish-subtitle">With cheese sauce</h3>
+                        <div class="dish-description">
+                            <div class="dish-name">
+                                <h3 class="dish-price">$ 12.00</h3>
+                                <h2 class="dish-title">Chicken Veggie Salad</h2>
+                                <h3 class="dish-subtitle">With cheese sauce</h3>
 
-                    </div>
-                    
-                      <div class="quantity">
-                        <button class="left" id="minus">-</button>
-                        <span class="number" id="numberPlace">0</span>
-                        <button class="right" id="plus">+ </button>
-                      </div>
+                            </div>
+                            
+                            <div class="quantity">
+                                <button class="left" id="minus">-</button>
+                                <span class="number" id="numberPlace">0</span>
+                                <button  class="right" id="plus">+</button>
+                            </div>
 
-                    </div>
+                        </div>
 
                     </div>
 
               
 
                     <div class="dish two">
-                  <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/tacos.jpg" alt="">
+                        <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/tacos.jpg" alt="">
 
-                  <div class="dish-description">
-                      <div class="dish-name">
-                        <h3 class="dish-price" >$ 8.00</h3>
-                        <h2 class="dish-title">Tacos</h2>
-                        <h3 class="dish-subtitle">With Guacamole</h3>
+                        <div class="dish-description">
+                            <div class="dish-name">
+                                <h3 class="dish-price" >$ 8.00</h3>
+                                <h2 class="dish-title">Tacos</h2>
+                                <h3 class="dish-subtitle">With Guacamole</h3>
 
-                    </div>
-                    
-                      <div class="quantity" >
-                        <button class="left" id="minus">-</button>
-                        <span class="number" id="numberPlace">0</span>
-                        <button  class="right" id="plus">+</button>
+                            </div>
+                            
+                            <div class="quantity" >
+                                <button class="left" id="minus">-</button>
+                                <span class="number" id="numberPlace">0</span>
+                                <button  class="right" id="plus">+</button>
 
-                      </div>
+                            </div>
 
-                </div>
+                        </div>
 
                 
 
                     </div>
 
                    <div class="dish three">
-                <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/curry.jpg" alt="">
+                        <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/curry.jpg" alt="">
 
-                <div class="dish-description">
-                    <div class="dish-name">
-                        <h3 class="dish-price">$ 12.00</h3>
-                        <h2 class="dish-title">Mutton Curry</h2>
-                        <h3 class="dish-subtitle">With with basmati rice</h3>
+                        <div class="dish-description">
+                            <div class="dish-name">
+                                <h3 class="dish-price">$ 12.00</h3>
+                                <h2 class="dish-title">Mutton Curry</h2>
+                                <h3 class="dish-subtitle">With with basmati rice</h3>
 
-                    </div>
-                    
-                    <div class="quantity">
-                        <button class="left" id="minus">-</button>
-                        <p class="number" id="numberPlace">02</p>
-                        <button class="right"id="plus">+</button>
+                            </div>
+                            
+                            <div class="quantity">
+                                <button class="left" id="minus">-</button>
+                                <p class="number" id="numberPlace">02</p>
+                                <button class="right"id="plus">+</button>
 
-                    </div>
+                            </div>
 
-                </div>
-
-                
-
+                        </div>
                    </div>
               </div>  
 
-              <div class ="column2">
+                <div class ="column2">
                   
                    <div class="dish four">
-                <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/patatas-bravas.jpg" alt="">
+                        <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/patatas-bravas.jpg" alt="">
 
-                <div class="dish-description">
-                    <div class="dish-name">
-                      <h3 class="dish-price">$ 5.00</h3>
-                      <h2 class="dish-title">Bravas</h2>
-                      <h3 class="dish-subtitle">With salsa picante</h3>
+                        <div class="dish-description">
+                            <div class="dish-name">
+                            <h3 class="dish-price">$ 5.00</h3>
+                            <h2 class="dish-title">Bravas</h2>
+                            <h3 class="dish-subtitle">With salsa picante</h3>
 
-                  </div>
-                  
-                    <div class="quantity"> 
-                      <button class="left"id="minus">-</button>
-                      <p class="number" id="numberPlace">02</p>
-                      <button class="right" id="plus">+</button>
+                            </div>
+                        
+                            <div class="quantity"> 
+                            <button class="left"id="minus">-</button>
+                            <p class="number" id="numberPlace">02</p>
+                            <button class="right" id="plus">+</button>
 
-                    </div>
-
-              </div>
-
-              
-
+                            </div>
+                        </div>
                    </div>
 
                    <div class="dish five">
-                <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/carrot-cake.jpg" alt="">
+                        <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/carrot-cake.jpg" alt="">
 
-                <div class="dish-description">
-                    <div class="dish-name">
-                      <h3 class="dish-price">$ 3.50</h3>
-                      <h2 class="dish-title">Carrot Cake</h2>
-                      <h3 class="dish-subtitle">One portion</h3>
+                        <div class="dish-description">
+                            <div class="dish-name">
+                            <h3 class="dish-price">$ 3.50</h3>
+                            <h2 class="dish-title">Carrot Cake</h2>
+                            <h3 class="dish-subtitle">One portion</h3>
 
-                  </div>
-                  
-                  <div class="quantity">
-                    <button class="left" id="minus">-</button>
-                    <span class="number" id="numberPlace">0</span>
-                    <button  class="right" id="plus">+</button>
+                        </div>
+                        
+                        <div class="quantity">
+                            <button class="left">-</button>
+                            <p class="number">02</p>
+                            <button class="right">+</button>
 
-                  </div>
+                        </div>
 
-              </div>
+                    </div>
 
-              
+                    </div>
 
-                   </div>
+                    <div class="dish six">
+                        <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/cheesecake.jpg" alt="">
 
-                   <div class="dish six">
-              <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/cheesecake.jpg" alt="">
+                        <div class="dish-description">
+                            <div class="dish-name">
+                                <h3 class="dish-price">$ 3.50</h3>
+                                <h2 class="dish-title">Cheesecake</h2>
+                                <h3 class="dish-subtitle">One portion</h3>
 
-              <div class="dish-description">
-                  <div class="dish-name">
-                      <h3 class="dish-price">$ 3.50</h3>
-                      <h2 class="dish-title">Cheesecake</h2>
-                      <h3 class="dish-subtitle">One portion</h3>
+                        </div>
+                            
+                            <div class="quantity">
+                                <button class="left">-</button>
+                                <p class="number">02</p>
+                                <button class="right">+</button>
 
-                  </div>
-                  
-                  <div class="quantity">
-                    <button class="left" id="minus">-</button>
-                    <span class="number" id="numberPlace">0</span>
-                    <button  class="right" id="plus">+</button>
+                            </div>
 
+                    </div>
+                    </div>
 
-                  </div>
-
-              </div>
-
-              
-
-                   </div>
-              </div>
+                </div>
 
 
               <div class ="column3">
                    <div class="dish seven">
-            <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/brownie.jpg" alt="">
+                        <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/brownie.jpg" alt="">
 
-            <div class="dish-description">
-                <div class="dish-name">
-                  <h3 class="dish-price">$ 3.50</h3>
-                  <h2 class="dish-title">Brownie</h2>
-                  <h3 class="dish-subtitle">One portion</h3>
+                        <div class="dish-description">
+                            <div class="dish-name">
+                            <h3 class="dish-price">$ 3.50</h3>
+                            <h2 class="dish-title">Brownie</h2>
+                            <h3 class="dish-subtitle">One portion</h3>
 
-              </div>
-              
-                <div class="quantity">
-                  <button class="left">-</button>
-                  <p class="number">02</p>
-                  <button class="right">+</button>
+                        </div>
+                        
+                            <div class="quantity">
+                            <button class="left">-</button>
+                            <p class="number">02</p>
+                            <button class="right">+</button>
 
-                </div>
+                            </div>
 
-          </div>
+                    </div>
 
           
 
                    </div>
 
                    <div class="dish eight">
-            <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/pancakes.jpg" alt="">
+                        <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/pancakes.jpg" alt="">
 
-            <div class="dish-description">
-                <div class="dish-name">
-                  <h3 class="dish-price">$ 8.00</h3>
-                  <h2 class="dish-title">Pancakes</h2>
-                  <h3 class="dish-subtitle">6 units</h3>
+                        <div class="dish-description">
+                            <div class="dish-name">
+                            <h3 class="dish-price">$ 8.00</h3>
+                            <h2 class="dish-title">Pancakes</h2>
+                            <h3 class="dish-subtitle">6 units</h3>
 
-              </div>
-              
-              <div class="quantity">
-                <button class="left" id="minus">-</button>
-                <span class="number" id="numberPlace">0</span>
-                <button  class="right" id="plus">+</button>
+                        </div>
+                        
+                        <div class="quantity">
+                            <button class="left">-</button>
+                            <p class="number">02</p>
+                            <button class="right">+</button>
 
+                        </div>
 
-              </div>
-
-          </div>
+                    </div>
 
           
 
                    </div>
 
                    <div class="dish nine">
-          <img class="img-dish-one" src="images/dishes/pizza.jpg" alt="">
+                        <img class="img-dish-one" src="images/dishes/pizza.jpg" alt="">
 
-          <div class="dish-description">
-              <div class="dish-name">
-                  <h3 class="dish-price">$ 8.00</h3>
-                  <h2 class="dish-title">Pizza</h2>
-                  <h3 class="dish-subtitle">Three portions</h3>
+                        <div class="dish-description">
+                            <div class="dish-name">
+                                <h3 class="dish-price">$ 8.00</h3>
+                                <h2 class="dish-title">Pizza</h2>
+                                <h3 class="dish-subtitle">Three portions</h3>
 
-              </div>
-              
-              <div class="quantity">
-                <button class="left" id="minus">-</button>
-                <span class="number" id="numberPlace">0</span>
-                <button  class="right" id="plus">+</button>
+                            </div>
+                            
+                            <div class="quantity">
+                                <button class="left">-</button>
+                                <p class="number">02</p>
+                                <button class="right">+</button>
 
+                            </div>
 
-              </div>
-
-          </div>
-
-          
-
+                        </div>
                    </div>
-              </div>    
+              </div> -->   
 
          </main>
 
@@ -322,87 +309,103 @@
                     </button>
                 </div>       
             </nav>
-            <div class ="wrapper">
-                
-            </div>
-        
-            <!-- <div class="compra">
-                <div class="buy">
+            <p class="empty">"Su carrito está vacío"</p>
+            <div class="compra">
 
-                    <h2>My cart</h2>
+                <h2>My cart</h2>
+              <div class="buy">
 
+                    
+               <!----    <div class="dish five">
+                        <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/carrot-cake.jpg" alt="">
 
-                    <div class="dish-container-one">
-                        <img class="img-dish-one" src="images/dishes/chicke_veggie_salad.jpg" alt="">
-                
                         <div class="dish-description">
                             <div class="dish-name">
-                                <h3 class="dish-price">$ 52.00</h3>
-                                <h2 class="dish-title">Chicken Veggie Salad</h2>
-                                <h3 class="dish-subtitle">With cheese sauce</h3>
-                
-                            </div>
-                            
-                            <div class="quantity">
-                                <button class="left">-</button>
-                                <p class="number">02</p>
-                                <button class="right">+</button>
-                
-                            </div>
-                
+                            <h3 class="dish-price">$ 3.50</h3>
+                            <h2 class="dish-title">Carrot Cake</h2>
+                            <h3 class="dish-subtitle">One portion</h3>
+
                         </div>
-                
                         
-                
-                    </div>
-                
-                    <div class="dish-container-one">
-                        <img class="img-dish-one" src="images/dishes/fries.jpg" alt="">
-                
-                        <div class="dish-description">
-                            <div class="dish-name">
-                                <h3 class="dish-price">$ 52.00</h3>
-                                <h2 class="dish-title">French Fry</h2>
-                                <h3 class="dish-subtitle">With beef bacon</h3>
-                
-                            </div>
-                            
-                            <div class="quantity">
-                                <button class="left">-</button>
-                                <p class="number">02</p>
-                                <button class="right">+</button>
-                
-                            </div>
-                
+                        <div class="quantity">
+                            <button class="left">-</button>
+                            <p class="number">02</p>
+                            <button class="right">+</button>
+
+                        </div>
+
                         </div>
                 
+                    </div>
+
+                  <div class="dish two">
+                            <img class="img-dish-one" onclick="makeVisible2()" src="images/dishes/tacos.jpg" alt="">
+
+                            <div class="dish-description">
+                                <div class="dish-name">
+                                    <h3 class="dish-price" >$ 8.00</h3>
+                                    <h2 class="dish-title">Tacos</h2>
+                                    <h3 class="dish-subtitle">With Guacamole</h3>
+
+                                </div>
+                                
+                                <div class="quantity" >
+                                    <button class="left" id="minus">-</button>
+                                    <span class="number" id="numberPlace">03</span>
+                                    <button  class="right" id="plus">+</button>
+
+                                </div>
+
+                            </div>
+
+                    
+
+                    </div>
+
+                    <div class="dish eight">
+                        <img class="img-dish-one" onclick="makeVisible2()"src="images/dishes/pancakes.jpg" alt="">
+
+                        <div class="dish-description">
+                            <div class="dish-name">
+                            <h3 class="dish-price">$ 8.00</h3>
+                            <h2 class="dish-title">Pancakes</h2>
+                            <h3 class="dish-subtitle">6 units</h3>
+
+                        </div>
                         
-                
+                        <div class="quantity">
+                            <button class="left">-</button>
+                            <p class="number">02</p>
+                            <button class="right">+</button>
+
+                        </div>
+
                     </div>
-                
-                    <div class="dish-container-one">
-                        <img class="img-dish-one" src="images/dishes/chicke_veggie_salad.jpg" alt="">
-                
+                    </div>
+                    
+                    <div class="dish nine">
+                        <img class="img-dish-one" src="images/dishes/pizza.jpg" alt="">
+
                         <div class="dish-description">
                             <div class="dish-name">
-                                <h3 class="dish-price">$ 52.00</h3>
-                                <h2 class="dish-title">Chicken Veggie Salad</h2>
-                                <h3 class="dish-subtitle">With cheese sauce</h3>
-                
+                                <h3 class="dish-price">$ 8.00</h3>
+                                <h2 class="dish-title">Pizza</h2>
+                                <h3 class="dish-subtitle">Three portions</h3>
+
                             </div>
                             
                             <div class="quantity">
                                 <button class="left">-</button>
                                 <p class="number">02</p>
                                 <button class="right">+</button>
-                
+
                             </div>
-                
+
                         </div>
-                    </div>
+                   </div> -->
+                  </div>
+
                 </div>
-
-            </div>
             <section class="orangesquare">
                 <div class="num Subtotal">
                     <h1>Subtotal</h1>
@@ -423,11 +426,10 @@
                     <button class="Enviar-pedido">Enviar pedido</button>
                 
             </section>
-        </div>
-
-    </div> -->
-
-
+            </div>
+       </div> 
+   </div>
+  
        
 
     
@@ -446,15 +448,14 @@
                  <h3 class="dish-subtitle3">With cheese sauce</h3>
                  <div class="text">The delicious dish,<br> do you like cooking?</div>
         
-             <h3 class="dish-price3">$ 52.00</h3>
-             <div class="quantity3">
-                <button class="left" id="minus">-</button>
-                <span class="number" id="numberPlace">0</span>
-                <button  class="right" id="plus">+</button>
-              </div>
+                <h3 class="dish-price3">$ 52.00</h3>
+                <div class="quantity3">
+                    <button class="left">-</button>
+                    <p class="number">02</p>
+                    <button class="right">+</button>
+                </div>
       </div>
  </div>
-
 
      <script src="javascript.js"></script>
 </body>
